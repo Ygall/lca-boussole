@@ -1,0 +1,26 @@
+```{r}
+#| include: false
+source("R/charger_tout.R", encoding = "UTF-8")
+ref <- charger()
+fiches <- construire_fiches(ref)
+svg <- integrer_svg(svg_reseau(dot_reseau(ref)))
+```
+
+```{r}
+#| output: asis
+cat("```{=html}\n", corps_html(ref, svg), "\n```\n", sep = "")
+```
+
+```{=html}
+<script src="vendor/d3-7.9.0.min.js"></script>
+<script src="vendor/markmap-view-0.17.2.js"></script>
+```
+
+```{r}
+#| output: asis
+cat("```{=html}\n<script>\n", donnees_js(ref, fiches), "</script>\n```\n", sep = "")
+```
+
+```{=html}
+<script src="assets/app.js"></script>
+```

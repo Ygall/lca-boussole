@@ -1,0 +1,20 @@
+project:
+  type: default
+  output-dir: _output
+  render:
+    - index.qmd
+
+lang: fr
+pagetitle: "Notions de LCA : carte mentale et parcours"
+
+format:
+  html:
+    output-file: lca_notions_parcours.html
+    minimal: true
+    embed-resources: true
+    css: assets/style.css
+
+execute:
+  echo: false
+  warning: false
+  message: false

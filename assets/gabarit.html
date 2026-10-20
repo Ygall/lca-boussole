@@ -1,0 +1,55 @@
+<main>
+<h1>{{TITRE}}</h1>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="t1" aria-selected="true" aria-controls="p1">Carte mentale des notions</button>
+<button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="p2">Carte mentale du parcours</button>
+<button class="tab" role="tab" id="t3" aria-selected="false" aria-controls="p3">Réseau des dépendances</button>
+<button class="tab" role="tab" id="t4" aria-selected="false" aria-controls="p4">Fiches récap</button>
+</div>
+
+<section id="p1" role="tabpanel" aria-labelledby="t1">
+<p class="sub">{{N}} notions réparties en {{NB_CATS}} catégories et {{NB_DOMS}} domaines. Cliquer sur un cercle pour déplier ou replier une branche ; molette pour zoomer, glisser pour déplacer.</p>
+<div class="bar">
+<button class="btn" id="mmAll">Tout déplier</button>
+<button class="btn" id="mmDom">Replier aux domaines</button>
+<button class="btn" id="mmFit">Recentrer</button>
+<div class="leg"><span><span class="sw" style="background:#534AB7;border-color:#534AB7"></span>A Conception</span><span><span class="sw" style="background:#0F6E56;border-color:#0F6E56"></span>B Analyse</span><span><span class="sw" style="background:#993C1D;border-color:#993C1D"></span>C Validité</span><span><span class="sw" style="background:#185FA5;border-color:#185FA5"></span>D Schémas</span><span><span class="sw" style="background:rgba(55,138,221,.16);border-color:transparent"></span>base</span><span><span class="sw" style="background:transparent;border-color:var(--muted);border-style:dashed"></span>avancé</span></div>
+</div>
+<div class="mmbox" id="mmbox"><svg id="mm" class="mmsvg"></svg></div>
+</section>
+
+<section id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+<p class="sub">Les {{N}} notions dans l’ordre d’apprentissage, regroupées en {{NB_PHASES}} phases. Chaque notion indique son code catégorie-domaine et, après la flèche, les numéros de ses notions prérequises.</p>
+<div class="bar">
+<button class="btn" id="pmAll">Tout déplier</button>
+<button class="btn" id="pmPh">Replier aux phases</button>
+<button class="btn" id="pmFit">Recentrer</button>
+<div class="leg"><span><span class="sw" style="background:#534AB7;border-color:#534AB7"></span>A Conception</span><span><span class="sw" style="background:#0F6E56;border-color:#0F6E56"></span>B Analyse</span><span><span class="sw" style="background:#993C1D;border-color:#993C1D"></span>C Validité</span><span><span class="sw" style="background:#185FA5;border-color:#185FA5"></span>D Schémas</span><span>← = prérequis</span></div>
+</div>
+<div class="mmbox"><svg id="pm" class="mmsvg"></svg></div>
+</section>
+
+<section id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+<p class="sub">Cliquer sur une notion pour afficher ses prérequis et dépendances.</p>
+<div class="bar">
+<label>Notion n° <input id="num" type="number" min="1" max="{{N}}" style="width:70px"></label>
+<label>Portée <select id="scope"><option value="all">chaîne complète</option><option value="direct">liens directs</option></select></label>
+<label>Afficher <select id="dir"><option value="both">prérequis et dépendances</option><option value="anc">prérequis</option><option value="desc">dépendances</option></select></label>
+<label>Zoom <input id="zoom" type="range" min="25" max="150" step="5" value="60"></label>
+<label>Phase <select id="phase"><option value="">aucune</option></select></label>
+<button class="btn" id="reset">Tout afficher</button>
+<div class="leg"><span><span class="sw" style="background:#EEEDFE;border-color:#534AB7"></span>A Conception</span><span><span class="sw" style="background:#E1F5EE;border-color:#0F6E56"></span>B Analyse</span><span><span class="sw" style="background:#FAECE7;border-color:#993C1D"></span>C Validité</span><span><span class="sw" style="background:#E6F1FB;border-color:#185FA5"></span>D Schémas</span><span>trait plein = base, pointillé = avancé</span><span><span class="sw" style="background:#BA7517;border-color:#BA7517"></span>prérequis</span><span><span class="sw" style="background:#185FA5;border-color:#185FA5"></span>dépendances</span></div>
+</div>
+<div class="wrap"><div class="fig" id="fig">{{SVG}}</div>
+<aside id="info"><h2>Aucune notion sélectionnée</h2><p style="color:var(--muted);margin:0">Sélectionner une notion dans la figure ou saisir son numéro.</p></aside></div>
+</section>
+
+<section id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+<div class="bar"><label>Fiche <select id="fsel"></select></label><span style="color:var(--muted);font-size:13px" id="fcount"></span></div>
+<article id="fiche"></article>
+</section>
+<footer>
+<p>{{PROJET}} - {{AUTEUR}}, {{AFFILIATION}}. Version {{VERSION}} du {{DATE}}.</p>
+<p style="margin:0">{{AVERTISSEMENT}}</p>
+</footer>
+</main>

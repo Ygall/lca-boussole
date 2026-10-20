@@ -15,3 +15,6 @@ renv/staging/
 .quarto/
 _output/
 *_files/
+
+/.quarto/
+**/*.quarto_ipynb
