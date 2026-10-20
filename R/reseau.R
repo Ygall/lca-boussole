@@ -1,7 +1,7 @@
 # Réseau de dépendances -------------------------------------------------------------------------------
 #
-# Le DOT est identique à celui de build_lca.py. Le rendu SVG passe par DiagrammeRsvg (viz.js via V8),
-# ce qui évite d'installer Graphviz ; le PDF est produit à partir du SVG par rsvg.
+# Le DOT est intégré en SVG dans la page et exporté en PDF. Le rendu passe par DiagrammeRsvg
+# (viz.js via V8), ce qui évite d'installer Graphviz ; le PDF est produit à partir du SVG par rsvg.
 
 # strwrap() produit des lignes strictement plus courtes que `width` : 31 équivaut à textwrap.wrap(30).
 envelopper <- function(txt, largeur = 30) paste(strwrap(txt, width = largeur + 1), collapse = "\\n")
@@ -45,18 +45,18 @@ svg_reseau <- function(dot) {
   DiagrammeRsvg::export_svg(list(x = list(diagram = dot, config = list(engine = "dot", options = NULL))))
 }
 
-# Écrit .dot, .svg, .pdf et renvoie le SVG prêt à intégrer dans la page (id="net", sans dimensions fixes).
+# Écrit le PDF du réseau dans le dossier de sortie.
 exporter_reseau <- function(ref, sortie) {
-  dot <- dot_reseau(ref)
-  ecrire_utf8(dot, file.path(sortie, "reseau_lca.dot"))
-  svg <- svg_reseau(dot)
-  ecrire_utf8(svg, file.path(sortie, "reseau_lca.svg"))
+  svg <- svg_reseau(dot_reseau(ref))
   rsvg::rsvg_pdf(charToRaw(enc2utf8(svg)), file.path(sortie, "reseau_lca.pdf"))
-  integrer_svg(svg)
 }
 
+# Prépare le SVG pour la page : id="net", sans dimensions fixes ni fond blanc.
+# Les liens <a xlink:title> créés par les infobulles sont retirés : Pandoc les réécrit en
+# <a href>, et un clic sur une notion rechargeait alors la page.
 integrer_svg <- function(svg) {
   svg <- substring(svg, regexpr("<svg", svg, fixed = TRUE))
   svg <- sub('<svg width="[^"]*" height="[^"]*"', '<svg id="net"', svg)
-  sub('<polygon fill="white" stroke="(transparent|none)"[^>]*/>', "", svg)
+  svg <- sub('<polygon fill="white" stroke="(transparent|none)"[^>]*/>', "", svg)
+  gsub("<a [^>]*>|</a>", "", svg)
 }

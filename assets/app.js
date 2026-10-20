@@ -30,7 +30,6 @@ const nodes={},pred={},succ={},edges=[];
 svg.querySelectorAll('g.node').forEach(g=>{const id=g.querySelector('title').textContent.trim();nodes[id]=g;pred[id]=[];succ[id]=[];});
 // Graphviz écrit le port dans le titre des arêtes (n001:e->n002:w) : on le retire.
 svg.querySelectorAll('g.edge').forEach(g=>{const [a,b]=g.querySelector('title').textContent.trim().split('->').map(x=>x.split(':')[0]);edges.push({a,b,g});succ[a].push(b);pred[b].push(a);});
-svg.querySelectorAll('a').forEach(a=>a.removeAttribute('xlink:title'));
 function zoom(){const z=document.getElementById('zoom').value/100;svg.setAttribute('width',vb.width*z);svg.setAttribute('height',vb.height*z);}
 document.getElementById('zoom').oninput=zoom;zoom();
 function closure(id,m,full){const s=new Set();const st=[...m[id]];while(st.length){const x=st.pop();if(s.has(x))continue;s.add(x);if(full)st.push(...m[x]);}return s;}

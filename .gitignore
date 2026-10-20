@@ -1,20 +1,16 @@
-dist/
-__pycache__/
-*.pyc
-.venv/
-
-# Archive d'import
-*.zip
-
-# R / Quarto
+# R / RStudio
 .Rhistory
 .RData
 .Rproj.user/
+
+# renv
 renv/library/
 renv/staging/
+
+# Quarto
 .quarto/
-_output/
+**/*.quarto_ipynb
 *_files/
+_output/
 
 /.quarto/
-**/*.quarto_ipynb

@@ -5,9 +5,7 @@
 #
 # Sorties dans _output/ :
 #   lca_notions_parcours.html   page unique à quatre onglets, utilisable hors ligne (Quarto)
-#   carte_mentale_lca.md/.mm    carte des notions (Markmap / Freeplane)
-#   parcours_lca.md/.mm         parcours ordonné avec prérequis (Markmap / Freeplane)
-#   reseau_lca.dot/.svg/.pdf    réseau de dépendances
+#   reseau_lca.pdf              réseau de dépendances
 
 source("R/charger_tout.R", encoding = "UTF-8")
 
@@ -21,10 +19,9 @@ testthat::test_dir("tests/testthat", reporter = "summary", stop_on_failure = TRU
 # 2. Page HTML
 quarto::quarto_render("index.qmd", quiet = TRUE)
 
-# 3. Exports annexes (après le rendu Quarto, qui gère lui-même le dossier de sortie)
+# 3. Réseau en PDF (après le rendu Quarto, qui gère lui-même le dossier de sortie)
 dir.create(sortie, showWarnings = FALSE)
-exporter_cartes(ref, sortie)
-invisible(exporter_reseau(ref, sortie))
+exporter_reseau(ref, sortie)
 
 nb_base <- sum(vapply(ref$info, function(x) x$annee == 1, logical(1)))
 cli::cli_alert_success(paste(

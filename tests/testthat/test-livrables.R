@@ -38,3 +38,10 @@ test_that("les données injectées ne ferment pas la balise script", {
   expect_false(grepl("</script", js, fixed = TRUE))
   expect_match(js, '"n036":{"num":"036","t":"Rapport de cotes","c":"B7","p":5,"lvl":"base"}', fixed = TRUE)
 })
+
+test_that("le SVG intégré ne contient aucun lien (Pandoc les rendrait cliquables)", {
+  svg <- integrer_svg(svg_reseau(dot_reseau(charger(RACINE))))
+  expect_false(grepl("<a ", svg, fixed = TRUE))
+  expect_match(svg, '<svg id="net"', fixed = TRUE)
+  expect_equal(length(gregexpr('class="node"', svg, fixed = TRUE)[[1]]), 143)
+})

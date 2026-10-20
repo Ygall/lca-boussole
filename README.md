@@ -18,8 +18,10 @@ renv::restore()        # installe les versions figées dans renv.lock (première
 Rscript build.R        # contrôles + tests + génération, sorties dans _output/
 ```
 
-Sorties : `lca_notions_parcours.html` (page unique, quatre onglets, hors ligne), cartes mentales
-`.md` (Markmap) et `.mm` (Freeplane), réseau de dépendances `.dot`, `.svg`, `.pdf`.
+Sorties : `lca_notions_parcours.html` (page unique, quatre onglets, hors ligne) et
+`reseau_lca.pdf` (réseau de dépendances, pour impression).
+
+Sous RStudio, ouvrir `lca-boussole.Rproj` (renv s'active automatiquement), puis `source("build.R")`.
 
 Tests seuls : `Rscript -e "testthat::test_dir('tests/testthat')"`.
 
@@ -39,7 +41,7 @@ Tests seuls : `Rscript -e "testthat::test_dir('tests/testthat')"`.
 | `vendor/` | d3 7.9.0 (ISC) et markmap-view 0.17.2 (MIT), intégrés au HTML |
 | `tests/testthat/` | Contrôles de cohérence et de non-régression |
 | `build.R` | Point d'entrée de la génération |
-| `legacy/` | Générateur Python d'origine (`build_lca.py`), conservé pour référence |
+| `lca-boussole.Rproj` | Projet RStudio |
 
 ## Règles d'édition
 
