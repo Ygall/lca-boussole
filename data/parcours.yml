@@ -1,0 +1,356 @@
+# Parcours : phases ordonnées. L'ordre des notions dans les phases fixe leur numéro (001 à N).
+# prerequis : identifiants des prérequis directs, qui doivent précéder la notion dans le parcours.
+- numero: 1
+  annee: 1
+  titre: Lire un article et poser la question
+  notions:
+  - id: structure-imrad
+    prerequis: []
+  - id: vocabulaire-methodologique-anglais
+    prerequis: [structure-imrad]
+  - id: rationnel-et-etat-des-connaissances
+    prerequis: [structure-imrad]
+  - id: question-de-recherche-pico
+    prerequis: [rationnel-et-etat-des-connaissances]
+  - id: objectif-principal-et-secondaires
+    prerequis: [question-de-recherche-pico]
+  - id: hypothese-testee
+    prerequis: [objectif-principal-et-secondaires]
+- numero: 2
+  annee: 1
+  titre: Identifier le schéma d'étude
+  notions:
+  - id: observationnel-vs-experimental
+    prerequis: [question-de-recherche-pico]
+  - id: descriptif-vs-analytique
+    prerequis: [observationnel-vs-experimental]
+  - id: etude-transversale
+    prerequis: [descriptif-vs-analytique]
+  - id: cohorte-prospective-ou-retrospective
+    prerequis: [descriptif-vs-analytique]
+  - id: etude-cas-temoins
+    prerequis: [descriptif-vs-analytique]
+  - id: essai-controle-randomise
+    prerequis: [observationnel-vs-experimental]
+  - id: etude-d-evaluation-diagnostique
+    prerequis: [descriptif-vs-analytique]
+  - id: revue-systematique-vs-narrative
+    prerequis: [question-de-recherche-pico]
+  - id: niveaux-de-preuve-has
+    prerequis: [essai-controle-randomise, revue-systematique-vs-narrative]
+- numero: 3
+  annee: 1
+  titre: Population et critères de jugement
+  notions:
+  - id: population-source-cible-etudiee
+    prerequis: [question-de-recherche-pico]
+  - id: criteres-d-inclusion-et-de-non-inclusion
+    prerequis: [population-source-cible-etudiee]
+  - id: recrutement-periode-centres
+    prerequis: [population-source-cible-etudiee]
+  - id: types-de-variables-qualitative-quantitative
+    prerequis: []
+  - id: critere-principal-unique-et-prespecifie
+    prerequis: [objectif-principal-et-secondaires]
+  - id: criteres-secondaires
+    prerequis: [critere-principal-unique-et-prespecifie]
+  - id: nature-binaire-ou-quantitative
+    prerequis: [types-de-variables-qualitative-quantitative, critere-principal-unique-et-prespecifie]
+  - id: mesure-en-aveugle
+    prerequis: [critere-principal-unique-et-prespecifie]
+- numero: 4
+  annee: 1
+  titre: Décrire les données
+  notions:
+  - id: effectifs-et-pourcentages
+    prerequis: [types-de-variables-qualitative-quantitative]
+  - id: moyenne-et-ecart-type
+    prerequis: [types-de-variables-qualitative-quantitative]
+  - id: mediane-et-intervalle-interquartile
+    prerequis: [moyenne-et-ecart-type]
+  - id: diagramme-de-flux
+    prerequis: [criteres-d-inclusion-et-de-non-inclusion]
+  - id: perdus-de-vue
+    prerequis: [diagramme-de-flux]
+  - id: lecture-du-tableau-1
+    prerequis: [effectifs-et-pourcentages, mediane-et-intervalle-interquartile]
+- numero: 5
+  annee: 1
+  titre: Mesurer fréquence et association
+  notions:
+  - id: prevalence
+    prerequis: [etude-transversale, effectifs-et-pourcentages]
+  - id: incidence-cumulee-taux-d-incidence
+    prerequis: [prevalence, cohorte-prospective-ou-retrospective]
+  - id: risque-relatif
+    prerequis: [incidence-cumulee-taux-d-incidence]
+  - id: difference-de-risque
+    prerequis: [incidence-cumulee-taux-d-incidence]
+  - id: reduction-relative-du-risque
+    prerequis: [risque-relatif]
+  - id: nnt-et-nnh
+    prerequis: [difference-de-risque]
+  - id: rapport-de-cotes
+    prerequis: [risque-relatif]
+- numero: 6
+  annee: 1
+  titre: Inférence et nombre de sujets
+  notions:
+  - id: hypotheses-h0-et-h1-valeur-de-p
+    prerequis: [hypothese-testee]
+  - id: ecart-type-vs-erreur-standard
+    prerequis: [moyenne-et-ecart-type]
+  - id: intervalle-de-confiance-a-95
+    prerequis: [ecart-type-vs-erreur-standard, hypotheses-h0-et-h1-valeur-de-p]
+  - id: tests-usuels-chi2-student-wilcoxon
+    prerequis: [hypotheses-h0-et-h1-valeur-de-p, nature-binaire-ou-quantitative]
+  - id: taille-de-l-effet
+    prerequis: [risque-relatif, intervalle-de-confiance-a-95]
+  - id: significativite-vs-pertinence-clinique
+    prerequis: [intervalle-de-confiance-a-95, taille-de-l-effet]
+  - id: risques-alpha-et-beta-puissance
+    prerequis: [hypotheses-h0-et-h1-valeur-de-p]
+  - id: effet-attendu
+    prerequis: [taille-de-l-effet, risques-alpha-et-beta-puissance]
+  - id: hypotheses-du-calcul
+    prerequis: [effet-attendu]
+- numero: 7
+  annee: 1
+  titre: Biais et validité
+  notions:
+  - id: biais-de-selection
+    prerequis: [criteres-d-inclusion-et-de-non-inclusion]
+  - id: biais-d-attrition
+    prerequis: [perdus-de-vue, biais-de-selection]
+  - id: biais-de-classement-differentiel-ou-non
+    prerequis: [mesure-en-aveugle]
+  - id: facteur-de-confusion
+    prerequis: [risque-relatif]
+  - id: validite-interne-et-externe
+    prerequis: [biais-de-selection, biais-de-classement-differentiel-ou-non, facteur-de-confusion]
+- numero: 8
+  annee: 1
+  titre: Essai randomisé
+  notions:
+  - id: equipoise
+    prerequis: [essai-controle-randomise]
+  - id: ethique-et-consentement
+    prerequis: [equipoise]
+  - id: randomisation
+    prerequis: [essai-controle-randomise, facteur-de-confusion]
+  - id: assignation-secrete
+    prerequis: [randomisation]
+  - id: comparabilite-initiale-tableau-1
+    prerequis: [lecture-du-tableau-1, randomisation]
+  - id: placebo-vs-traitement-de-reference
+    prerequis: [essai-controle-randomise]
+  - id: insu-patient-soignant-evaluateur
+    prerequis: [mesure-en-aveugle, placebo-vs-traitement-de-reference]
+  - id: intention-de-traiter-vs-per-protocole
+    prerequis: [perdus-de-vue, randomisation]
+- numero: 9
+  annee: 1
+  titre: Cohorte et cas-témoins
+  notions:
+  - id: definition-des-groupes-et-de-l-exposition
+    prerequis: [cohorte-prospective-ou-retrospective]
+  - id: absence-de-l-evenement-a-l-inclusion
+    prerequis: [definition-des-groupes-et-de-l-exposition]
+  - id: anteriorite-de-l-exposition-sur-l-evenement
+    prerequis: [definition-des-groupes-et-de-l-exposition]
+  - id: duree-et-completude-du-suivi-perdus-de-vue-differentiels
+    prerequis: [biais-d-attrition]
+  - id: incidence-et-personnes-temps
+    prerequis: [incidence-cumulee-taux-d-incidence]
+  - id: risque-relatif-cohorte
+    prerequis: [risque-relatif, incidence-et-personnes-temps]
+  - id: definition-et-source-des-cas
+    prerequis: [etude-cas-temoins]
+  - id: choix-et-source-des-temoins
+    prerequis: [definition-et-source-des-cas, biais-de-selection]
+  - id: appariement-principe-et-facteurs
+    prerequis: [choix-et-source-des-temoins, facteur-de-confusion]
+  - id: recueil-retrospectif-de-l-exposition
+    prerequis: [definition-et-source-des-cas]
+  - id: biais-de-memorisation
+    prerequis: [biais-de-classement-differentiel-ou-non, recueil-retrospectif-de-l-exposition]
+  - id: impossibilite-d-estimer-incidence-et-prevalence
+    prerequis: [incidence-cumulee-taux-d-incidence, choix-et-source-des-temoins]
+  - id: rapport-de-cotes-seule-mesure-estimable
+    prerequis: [rapport-de-cotes, impossibilite-d-estimer-incidence-et-prevalence]
+- numero: 10
+  annee: 1
+  titre: Test diagnostique et synthèse
+  notions:
+  - id: test-de-reference
+    prerequis: [etude-d-evaluation-diagnostique]
+  - id: sensibilite-specificite
+    prerequis: [test-de-reference, effectifs-et-pourcentages]
+  - id: vpp-vpn-et-prevalence
+    prerequis: [sensibilite-specificite, prevalence]
+  - id: lecture-d-un-forest-plot
+    prerequis: [revue-systematique-vs-narrative, intervalle-de-confiance-a-95]
+  - id: estimation-groupee
+    prerequis: [lecture-d-un-forest-plot]
+- numero: 11
+  annee: 1
+  titre: Interpréter et conclure
+  notions:
+  - id: analyse-de-sensibilite-sous-groupes-interaction
+    prerequis: [risque-relatif, facteur-de-confusion]
+  - id: limites-declarees
+    prerequis: [validite-interne-et-externe]
+  - id: applicabilite-a-la-pratique
+    prerequis: [validite-interne-et-externe, population-source-cible-etudiee]
+  - id: financement-et-liens-d-interets
+    prerequis: []
+  - id: conclusion-coherente-avec-les-resultats
+    prerequis: [significativite-vs-pertinence-clinique, validite-interne-et-externe]
+- numero: 12
+  annee: 2
+  titre: Données de survie
+  notions:
+  - id: critere-de-type-delai-censure
+    prerequis: [nature-binaire-ou-quantitative]
+  - id: kaplan-meier-et-censure
+    prerequis: [critere-de-type-delai-censure]
+  - id: sujets-a-risque-mediane-de-survie
+    prerequis: [kaplan-meier-et-censure]
+  - id: test-du-log-rank
+    prerequis: [kaplan-meier-et-censure, tests-usuels-chi2-student-wilcoxon]
+  - id: lecture-d-un-hazard-ratio
+    prerequis: [kaplan-meier-et-censure, risque-relatif]
+  - id: hypothese-des-risques-proportionnels
+    prerequis: [lecture-d-un-hazard-ratio]
+  - id: censure-informative
+    prerequis: [critere-de-type-delai-censure, biais-d-attrition]
+  - id: risques-concurrents
+    prerequis: [kaplan-meier-et-censure]
+  - id: biais-du-temps-immortel
+    prerequis: [definition-des-groupes-et-de-l-exposition, critere-de-type-delai-censure]
+- numero: 13
+  annee: 2
+  titre: Confusion, modélisation et causalité
+  notions:
+  - id: fraction-attribuable
+    prerequis: [risque-relatif, prevalence]
+  - id: regressions-lineaire-logistique-cox
+    prerequis: [tests-usuels-chi2-student-wilcoxon, rapport-de-cotes, lecture-d-un-hazard-ratio]
+  - id: ajustement
+    prerequis: [facteur-de-confusion, regressions-lineaire-logistique-cox]
+  - id: biais-d-indication
+    prerequis: [facteur-de-confusion]
+  - id: score-de-propension
+    prerequis: [ajustement, biais-d-indication]
+  - id: difference-standardisee-entre-groupes
+    prerequis: [comparabilite-initiale-tableau-1, score-de-propension]
+  - id: analyse-appariee-regression-logistique-conditionnelle
+    prerequis: [appariement-principe-et-facteurs, regressions-lineaire-logistique-cox]
+  - id: biais-de-collision
+    prerequis: [ajustement]
+  - id: causalite-inverse
+    prerequis: [anteriorite-de-l-exposition-sur-l-evenement]
+  - id: effet-travailleur-sain
+    prerequis: [biais-de-selection]
+  - id: biais-de-selection-des-temoins-berkson
+    prerequis: [choix-et-source-des-temoins, biais-de-selection]
+  - id: cas-temoins-nichee
+    prerequis: [cohorte-prospective-ou-retrospective, choix-et-source-des-temoins]
+  - id: bases-medico-administratives-registres
+    prerequis: [cohorte-prospective-ou-retrospective, biais-de-classement-differentiel-ou-non]
+  - id: emulation-d-essai-cible
+    prerequis: [essai-controle-randomise, biais-du-temps-immortel, ajustement]
+  - id: criteres-de-bradford-hill
+    prerequis: [causalite-inverse, validite-interne-et-externe]
+- numero: 14
+  annee: 2
+  titre: Critères de jugement et mesure
+  notions:
+  - id: critere-composite
+    prerequis: [critere-principal-unique-et-prespecifie]
+  - id: critere-intermediaire-de-substitution
+    prerequis: [critere-principal-unique-et-prespecifie]
+  - id: proms-et-echelles-validees
+    prerequis: [nature-binaire-ou-quantitative]
+  - id: comite-d-adjudication
+    prerequis: [mesure-en-aveugle]
+  - id: regression-vers-la-moyenne
+    prerequis: [moyenne-et-ecart-type, criteres-d-inclusion-et-de-non-inclusion]
+  - id: protocole-publie-et-enregistrement
+    prerequis: [objectif-principal-et-secondaires]
+  - id: changement-de-critere-a-posteriori
+    prerequis: [critere-principal-unique-et-prespecifie, protocole-publie-et-enregistrement]
+- numero: 15
+  annee: 2
+  titre: Plans d'essai et analyses avancées
+  notions:
+  - id: stratification-blocs-minimisation
+    prerequis: [randomisation]
+  - id: methodes-d-echantillonnage
+    prerequis: [population-source-cible-etudiee]
+  - id: essai-en-grappes
+    prerequis: [randomisation]
+  - id: effet-de-grappe-et-icc
+    prerequis: [essai-en-grappes]
+  - id: plan-croise-plan-factoriel
+    prerequis: [essai-controle-randomise]
+  - id: contamination-cross-over
+    prerequis: [intention-de-traiter-vs-per-protocole]
+  - id: itt-modifiee
+    prerequis: [intention-de-traiter-vs-per-protocole]
+  - id: gestion-des-donnees-manquantes
+    prerequis: [perdus-de-vue, itt-modifiee]
+  - id: superiorite-non-inferiorite-equivalence
+    prerequis: [hypotheses-h0-et-h1-valeur-de-p, intervalle-de-confiance-a-95]
+  - id: marge-de-non-inferiorite
+    prerequis: [superiorite-non-inferiorite-equivalence, significativite-vs-pertinence-clinique]
+  - id: nsn-en-non-inferiorite
+    prerequis: [marge-de-non-inferiorite, hypotheses-du-calcul]
+  - id: inflation-pour-attrition
+    prerequis: [hypotheses-du-calcul, perdus-de-vue]
+  - id: multiplicite-des-tests
+    prerequis: [risques-alpha-et-beta-puissance]
+  - id: analyses-intermediaires-depense-d-alpha
+    prerequis: [multiplicite-des-tests]
+  - id: arret-premature
+    prerequis: [analyses-intermediaires-depense-d-alpha]
+  - id: sous-groupes-et-test-d-interaction
+    prerequis: [analyse-de-sensibilite-sous-groupes-interaction, multiplicite-des-tests]
+- numero: 16
+  annee: 2
+  titre: Diagnostic avancé et méta-analyse
+  notions:
+  - id: rapports-de-vraisemblance
+    prerequis: [vpp-vpn-et-prevalence]
+  - id: courbe-roc-auc-choix-du-seuil
+    prerequis: [sensibilite-specificite]
+  - id: biais-de-spectre-de-verification-d-incorporation
+    prerequis: [test-de-reference, biais-de-selection]
+  - id: reproductibilite-kappa-icc
+    prerequis: [mesure-en-aveugle, effet-de-grappe-et-icc]
+  - id: difference-de-moyennes-standardisee
+    prerequis: [taille-de-l-effet]
+  - id: heterogeneite-q-i2
+    prerequis: [estimation-groupee]
+  - id: effets-fixes-vs-aleatoires
+    prerequis: [heterogeneite-q-i2]
+  - id: funnel-plot-biais-de-publication
+    prerequis: [lecture-d-un-forest-plot]
+- numero: 17
+  annee: 2
+  titre: Jugement critique et niveau de preuve
+  notions:
+  - id: coherence-externe
+    prerequis: [validite-interne-et-externe, revue-systematique-vs-narrative]
+  - id: absence-de-preuve-et-preuve-d-absence
+    prerequis: [significativite-vs-pertinence-clinique, risques-alpha-et-beta-puissance]
+  - id: limites-non-declarees
+    prerequis: [limites-declarees]
+  - id: spin-et-sur-interpretation
+    prerequis: [conclusion-coherente-avec-les-resultats, changement-de-critere-a-posteriori]
+  - id: grilles-equator-consort-strobe-stard-prisma
+    prerequis: [structure-imrad, protocole-publie-et-enregistrement]
+  - id: science-ouverte-partage-des-donnees
+    prerequis: [protocole-publie-et-enregistrement]
+  - id: grade-certitude-et-force
+    prerequis: [niveaux-de-preuve-has, heterogeneite-q-i2, funnel-plot-biais-de-publication]

@@ -1,0 +1,204 @@
+# Domaines : notions de base et avancées, dans l'ordre d'affichage de la carte mentale des notions.
+- numero: 1
+  libelle: Démarche scientifique et EBM
+  base:
+  - structure-imrad
+  - rationnel-et-etat-des-connaissances
+  - question-de-recherche-pico
+  - objectif-principal-et-secondaires
+  - hypothese-testee
+  - niveaux-de-preuve-has
+  - vocabulaire-methodologique-anglais
+  avance:
+  - grade-certitude-et-force
+  - protocole-publie-et-enregistrement
+  - science-ouverte-partage-des-donnees
+- numero: 2
+  libelle: Schémas d'étude
+  base:
+  - observationnel-vs-experimental
+  - descriptif-vs-analytique
+  - etude-transversale
+  - cohorte-prospective-ou-retrospective
+  - etude-cas-temoins
+  - essai-controle-randomise
+  - etude-d-evaluation-diagnostique
+  avance:
+  - essai-en-grappes
+  - plan-croise-plan-factoriel
+  - emulation-d-essai-cible
+  - bases-medico-administratives-registres
+- numero: 3
+  libelle: Population et échantillon
+  base:
+  - criteres-d-inclusion-et-de-non-inclusion
+  - population-source-cible-etudiee
+  - recrutement-periode-centres
+  - diagramme-de-flux
+  - perdus-de-vue
+  avance:
+  - methodes-d-echantillonnage
+  - effet-de-grappe-et-icc
+  - gestion-des-donnees-manquantes
+- numero: 4
+  libelle: Critères de jugement
+  base:
+  - critere-principal-unique-et-prespecifie
+  - criteres-secondaires
+  - nature-binaire-ou-quantitative
+  - mesure-en-aveugle
+  avance:
+  - critere-de-type-delai-censure
+  - critere-composite
+  - critere-intermediaire-de-substitution
+  - proms-et-echelles-validees
+  - comite-d-adjudication
+  - changement-de-critere-a-posteriori
+  - risques-concurrents
+- numero: 5
+  libelle: Nombre de sujets nécessaires
+  base:
+  - risques-alpha-et-beta-puissance
+  - effet-attendu
+  - hypotheses-du-calcul
+  avance:
+  - nsn-en-non-inferiorite
+  - inflation-pour-attrition
+  - analyses-intermediaires-depense-d-alpha
+- numero: 6
+  libelle: Statistiques descriptives
+  base:
+  - types-de-variables-qualitative-quantitative
+  - effectifs-et-pourcentages
+  - moyenne-et-ecart-type
+  - mediane-et-intervalle-interquartile
+  - ecart-type-vs-erreur-standard
+  - lecture-du-tableau-1
+  avance:
+  - difference-standardisee-entre-groupes
+  - kaplan-meier-et-censure
+  - sujets-a-risque-mediane-de-survie
+- numero: 7
+  libelle: Mesures de fréquence et d'association
+  base:
+  - prevalence
+  - incidence-cumulee-taux-d-incidence
+  - risque-relatif
+  - rapport-de-cotes
+  - reduction-relative-du-risque
+  - difference-de-risque
+  - nnt-et-nnh
+  - analyse-de-sensibilite-sous-groupes-interaction
+  avance:
+  - lecture-d-un-hazard-ratio
+  - fraction-attribuable
+  - difference-de-moyennes-standardisee
+- numero: 8
+  libelle: Inférence statistique
+  base:
+  - hypotheses-h0-et-h1-valeur-de-p
+  - intervalle-de-confiance-a-95
+  - tests-usuels-chi2-student-wilcoxon
+  - significativite-vs-pertinence-clinique
+  - taille-de-l-effet
+  avance:
+  - test-du-log-rank
+  - multiplicite-des-tests
+  - sous-groupes-et-test-d-interaction
+  - regressions-lineaire-logistique-cox
+  - ajustement
+  - hypothese-des-risques-proportionnels
+  - score-de-propension
+- numero: 9
+  libelle: Biais et validité
+  base:
+  - biais-de-selection
+  - biais-de-classement-differentiel-ou-non
+  - facteur-de-confusion
+  - validite-interne-et-externe
+  - biais-d-attrition
+  avance:
+  - biais-d-indication
+  - biais-de-collision
+  - causalite-inverse
+  - regression-vers-la-moyenne
+  - criteres-de-bradford-hill
+  - coherence-externe
+- numero: 10
+  libelle: Discussion, intégrité, reporting
+  base:
+  - conclusion-coherente-avec-les-resultats
+  - limites-declarees
+  - applicabilite-a-la-pratique
+  - financement-et-liens-d-interets
+  - ethique-et-consentement
+  avance:
+  - spin-et-sur-interpretation
+  - absence-de-preuve-et-preuve-d-absence
+  - grilles-equator-consort-strobe-stard-prisma
+  - limites-non-declarees
+- numero: 11
+  libelle: Essai randomisé
+  base:
+  - randomisation
+  - assignation-secrete
+  - equipoise
+  - insu-patient-soignant-evaluateur
+  - comparabilite-initiale-tableau-1
+  - placebo-vs-traitement-de-reference
+  - intention-de-traiter-vs-per-protocole
+  avance:
+  - stratification-blocs-minimisation
+  - superiorite-non-inferiorite-equivalence
+  - marge-de-non-inferiorite
+  - itt-modifiee
+  - arret-premature
+  - contamination-cross-over
+- numero: 12
+  libelle: Étude de cohorte
+  base:
+  - definition-des-groupes-et-de-l-exposition
+  - absence-de-l-evenement-a-l-inclusion
+  - anteriorite-de-l-exposition-sur-l-evenement
+  - duree-et-completude-du-suivi-perdus-de-vue-differentiels
+  - incidence-et-personnes-temps
+  - risque-relatif-cohorte
+  avance:
+  - biais-du-temps-immortel
+  - effet-travailleur-sain
+  - censure-informative
+- numero: 13
+  libelle: Étude cas-témoins
+  base:
+  - definition-et-source-des-cas
+  - choix-et-source-des-temoins
+  - appariement-principe-et-facteurs
+  - recueil-retrospectif-de-l-exposition
+  - biais-de-memorisation
+  - impossibilite-d-estimer-incidence-et-prevalence
+  - rapport-de-cotes-seule-mesure-estimable
+  avance:
+  - biais-de-selection-des-temoins-berkson
+  - analyse-appariee-regression-logistique-conditionnelle
+  - cas-temoins-nichee
+- numero: 14
+  libelle: Tests diagnostiques
+  base:
+  - sensibilite-specificite
+  - vpp-vpn-et-prevalence
+  - test-de-reference
+  avance:
+  - rapports-de-vraisemblance
+  - courbe-roc-auc-choix-du-seuil
+  - biais-de-spectre-de-verification-d-incorporation
+  - reproductibilite-kappa-icc
+- numero: 15
+  libelle: Revues et méta-analyses
+  base:
+  - revue-systematique-vs-narrative
+  - lecture-d-un-forest-plot
+  - estimation-groupee
+  avance:
+  - heterogeneite-q-i2
+  - effets-fixes-vs-aleatoires
+  - funnel-plot-biais-de-publication

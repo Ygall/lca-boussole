@@ -1,0 +1,145 @@
+# Libellés des notions, indexés par identifiant stable.
+# Un identifiant ne doit jamais être modifié ni réutilisé : il sert de clé aux fiches et aux prérequis.
+structure-imrad: Structure IMRaD
+rationnel-et-etat-des-connaissances: Rationnel et état des connaissances
+question-de-recherche-pico: Question de recherche (PICO)
+objectif-principal-et-secondaires: Objectif principal et secondaires
+hypothese-testee: Hypothèse testée
+niveaux-de-preuve-has: Niveaux de preuve HAS
+vocabulaire-methodologique-anglais: Vocabulaire méthodologique anglais
+grade-certitude-et-force: 'GRADE : certitude et force'
+protocole-publie-et-enregistrement: Protocole publié et enregistrement
+science-ouverte-partage-des-donnees: Science ouverte, partage des données
+observationnel-vs-experimental: Observationnel vs expérimental
+descriptif-vs-analytique: Descriptif vs analytique
+etude-transversale: Étude transversale
+cohorte-prospective-ou-retrospective: Cohorte prospective ou rétrospective
+etude-cas-temoins: Étude cas-témoins
+essai-controle-randomise: Essai contrôlé randomisé
+etude-d-evaluation-diagnostique: Étude d'évaluation diagnostique
+essai-en-grappes: Essai en grappes
+plan-croise-plan-factoriel: Plan croisé, plan factoriel
+emulation-d-essai-cible: Émulation d'essai cible
+bases-medico-administratives-registres: Bases médico-administratives, registres
+criteres-d-inclusion-et-de-non-inclusion: Critères d'inclusion et de non-inclusion
+population-source-cible-etudiee: Population source, cible, étudiée
+recrutement-periode-centres: Recrutement, période, centres
+diagramme-de-flux: Diagramme de flux
+perdus-de-vue: Perdus de vue
+methodes-d-echantillonnage: Méthodes d'échantillonnage
+effet-de-grappe-et-icc: Effet de grappe et ICC
+gestion-des-donnees-manquantes: Gestion des données manquantes
+critere-principal-unique-et-prespecifie: Critère principal unique et préspécifié
+criteres-secondaires: Critères secondaires
+nature-binaire-ou-quantitative: Nature binaire ou quantitative
+mesure-en-aveugle: Mesure en aveugle
+critere-de-type-delai-censure: Critère de type délai, censure
+critere-composite: Critère composite
+critere-intermediaire-de-substitution: Critère intermédiaire de substitution
+proms-et-echelles-validees: PROMs et échelles validées
+comite-d-adjudication: Comité d'adjudication
+changement-de-critere-a-posteriori: Changement de critère a posteriori
+risques-concurrents: Risques concurrents
+risques-alpha-et-beta-puissance: Risques alpha et bêta, puissance
+effet-attendu: Effet attendu
+hypotheses-du-calcul: Hypothèses du calcul
+nsn-en-non-inferiorite: NSN en non-infériorité
+inflation-pour-attrition: Inflation pour attrition
+analyses-intermediaires-depense-d-alpha: Analyses intermédiaires, dépense d'alpha
+types-de-variables-qualitative-quantitative: 'Types de variables : qualitative, quantitative'
+effectifs-et-pourcentages: Effectifs et pourcentages
+moyenne-et-ecart-type: Moyenne et écart-type
+mediane-et-intervalle-interquartile: Médiane et intervalle interquartile
+ecart-type-vs-erreur-standard: Écart-type vs erreur standard
+lecture-du-tableau-1: Lecture du tableau 1
+difference-standardisee-entre-groupes: Différence standardisée entre groupes
+kaplan-meier-et-censure: Kaplan-Meier et censure
+sujets-a-risque-mediane-de-survie: Sujets à risque, médiane de survie
+prevalence: Prévalence
+incidence-cumulee-taux-d-incidence: Incidence cumulée, taux d'incidence
+risque-relatif: Risque relatif
+rapport-de-cotes: Rapport de cotes
+reduction-relative-du-risque: Réduction relative du risque
+difference-de-risque: Différence de risque
+nnt-et-nnh: NNT et NNH
+analyse-de-sensibilite-sous-groupes-interaction: Analyse de sensibilité, sous-groupes, interaction
+lecture-d-un-hazard-ratio: Lecture d'un hazard ratio
+fraction-attribuable: Fraction attribuable
+difference-de-moyennes-standardisee: Différence de moyennes standardisée
+hypotheses-h0-et-h1-valeur-de-p: Hypothèses H0 et H1, valeur de p
+intervalle-de-confiance-a-95: Intervalle de confiance à 95 %
+tests-usuels-chi2-student-wilcoxon: 'Tests usuels : chi2, Student, Wilcoxon'
+significativite-vs-pertinence-clinique: Significativité vs pertinence clinique
+taille-de-l-effet: Taille de l'effet
+test-du-log-rank: Test du log-rank
+multiplicite-des-tests: Multiplicité des tests
+sous-groupes-et-test-d-interaction: Sous-groupes et test d'interaction
+regressions-lineaire-logistique-cox: Régressions linéaire, logistique, Cox
+ajustement: Ajustement
+hypothese-des-risques-proportionnels: Hypothèse des risques proportionnels
+score-de-propension: Score de propension
+biais-de-selection: Biais de sélection
+biais-de-classement-differentiel-ou-non: Biais de classement, différentiel ou non
+facteur-de-confusion: Facteur de confusion
+validite-interne-et-externe: Validité interne et externe
+biais-d-attrition: Biais d'attrition
+biais-d-indication: Biais d'indication
+biais-de-collision: Biais de collision
+causalite-inverse: Causalité inverse
+regression-vers-la-moyenne: Régression vers la moyenne
+criteres-de-bradford-hill: Critères de Bradford Hill
+coherence-externe: Cohérence externe
+conclusion-coherente-avec-les-resultats: Conclusion cohérente avec les résultats
+limites-declarees: Limites déclarées
+applicabilite-a-la-pratique: Applicabilité à la pratique
+financement-et-liens-d-interets: Financement et liens d'intérêts
+ethique-et-consentement: Éthique et consentement
+spin-et-sur-interpretation: Spin et sur-interprétation
+absence-de-preuve-et-preuve-d-absence: Absence de preuve et preuve d'absence
+grilles-equator-consort-strobe-stard-prisma: 'Grilles EQUATOR : CONSORT, STROBE, STARD, PRISMA'
+limites-non-declarees: Limites non déclarées
+randomisation: Randomisation
+assignation-secrete: Assignation secrète
+equipoise: Équipoise
+insu-patient-soignant-evaluateur: 'Insu : patient, soignant, évaluateur'
+comparabilite-initiale-tableau-1: Comparabilité initiale (tableau 1)
+placebo-vs-traitement-de-reference: Placebo vs traitement de référence
+intention-de-traiter-vs-per-protocole: Intention de traiter vs per protocole
+stratification-blocs-minimisation: Stratification, blocs, minimisation
+superiorite-non-inferiorite-equivalence: Supériorité, non-infériorité, équivalence
+marge-de-non-inferiorite: Marge de non-infériorité
+itt-modifiee: ITT modifiée
+arret-premature: Arrêt prématuré
+contamination-cross-over: Contamination, cross-over
+definition-des-groupes-et-de-l-exposition: Définition des groupes et de l'exposition
+absence-de-l-evenement-a-l-inclusion: Absence de l'événement à l'inclusion
+anteriorite-de-l-exposition-sur-l-evenement: Antériorité de l'exposition sur l'événement
+duree-et-completude-du-suivi-perdus-de-vue-differentiels: Durée et complétude du suivi, perdus de vue différentiels
+incidence-et-personnes-temps: Incidence et personnes-temps
+risque-relatif-cohorte: Risque relatif
+biais-du-temps-immortel: Biais du temps immortel
+effet-travailleur-sain: Effet travailleur sain
+censure-informative: Censure informative
+definition-et-source-des-cas: Définition et source des cas
+choix-et-source-des-temoins: Choix et source des témoins
+appariement-principe-et-facteurs: 'Appariement : principe et facteurs'
+recueil-retrospectif-de-l-exposition: Recueil rétrospectif de l'exposition
+biais-de-memorisation: Biais de mémorisation
+impossibilite-d-estimer-incidence-et-prevalence: Impossibilité d'estimer incidence et prévalence
+rapport-de-cotes-seule-mesure-estimable: Rapport de cotes, seule mesure estimable
+biais-de-selection-des-temoins-berkson: Biais de sélection des témoins (Berkson)
+analyse-appariee-regression-logistique-conditionnelle: Analyse appariée, régression logistique conditionnelle
+cas-temoins-nichee: Cas-témoins nichée
+sensibilite-specificite: Sensibilité, spécificité
+vpp-vpn-et-prevalence: VPP, VPN et prévalence
+test-de-reference: Test de référence
+rapports-de-vraisemblance: Rapports de vraisemblance
+courbe-roc-auc-choix-du-seuil: Courbe ROC, AUC, choix du seuil
+biais-de-spectre-de-verification-d-incorporation: Biais de spectre, de vérification, d'incorporation
+reproductibilite-kappa-icc: 'Reproductibilité : kappa, ICC'
+revue-systematique-vs-narrative: Revue systématique vs narrative
+lecture-d-un-forest-plot: Lecture d'un forest plot
+estimation-groupee: Estimation groupée
+heterogeneite-q-i2: 'Hétérogénéité : Q, I²'
+effets-fixes-vs-aleatoires: Effets fixes vs aléatoires
+funnel-plot-biais-de-publication: Funnel plot, biais de publication

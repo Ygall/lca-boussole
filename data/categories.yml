@@ -1,0 +1,13 @@
+# Catégories et domaines rattachés (l'ordre fixe l'affichage).
+- code: A
+  libelle: Conception de l'étude
+  domaines: [1, 2, 3, 4, 5]
+- code: B
+  libelle: Analyse et résultats
+  domaines: [6, 7, 8]
+- code: C
+  libelle: Validité et interprétation
+  domaines: [9, 10]
+- code: D
+  libelle: Schémas spécifiques
+  domaines: [11, 12, 13, 14, 15]

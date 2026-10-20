@@ -1,0 +1,17 @@
+dist/
+__pycache__/
+*.pyc
+.venv/
+
+# Archive d'import
+*.zip
+
+# R / Quarto
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+.quarto/
+_output/
+*_files/
