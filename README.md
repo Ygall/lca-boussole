@@ -7,17 +7,21 @@ Proposition pédagogique : ce document ne constitue pas un programme officiel de
 
 ## Génération
 
-Prérequis : Python 3.9 ou plus, Graphviz (exécutable `dot` dans le PATH).
+Prérequis : R ≥ 4.5 et [Quarto](https://quarto.org) ≥ 1.5. Graphviz n'est pas nécessaire
+(le réseau est rendu par viz.js via DiagrammeRsvg).
 
+```r
+renv::restore()        # installe les versions figées dans renv.lock (première fois)
 ```
-python -m venv .venv
-source .venv/bin/activate          # Windows : .venv\Scripts\activate
-pip install -r requirements.txt
-python build_lca.py                # sorties dans dist/
+
+```bash
+Rscript build.R        # contrôles + tests + génération, sorties dans _output/
 ```
 
 Sorties : `lca_notions_parcours.html` (page unique, quatre onglets, hors ligne), cartes mentales
 `.md` (Markmap) et `.mm` (Freeplane), réseau de dépendances `.dot`, `.svg`, `.pdf`.
+
+Tests seuls : `Rscript -e "testthat::test_dir('tests/testthat')"`.
 
 ## Organisation
 
@@ -29,8 +33,13 @@ Sorties : `lca_notions_parcours.html` (page unique, quatre onglets, hors ligne),
 | `data/domaines.yml` | Notions de base et avancées de chaque domaine (ordre de la carte des notions) |
 | `data/parcours.yml` | Phases ordonnées, notions et prérequis directs (ordre du parcours) |
 | `fiches/<identifiant>.md` | Corps des fiches récap ; l'en-tête est généré |
+| `R/` | Lecture et contrôle des référentiels, cartes, réseau, fiches, page |
+| `index.qmd`, `_quarto.yml` | Page Quarto (HTML autonome, `embed-resources`) |
+| `assets/` | Gabarit HTML, CSS et JavaScript de la page |
 | `vendor/` | d3 7.9.0 (ISC) et markmap-view 0.17.2 (MIT), intégrés au HTML |
-| `build_lca.py` | Contrôles de cohérence et génération |
+| `tests/testthat/` | Contrôles de cohérence et de non-régression |
+| `build.R` | Point d'entrée de la génération |
+| `legacy/` | Générateur Python d'origine (`build_lca.py`), conservé pour référence |
 
 ## Règles d'édition
 
@@ -44,5 +53,15 @@ Sorties : `lca_notions_parcours.html` (page unique, quatre onglets, hors ligne),
   Repérage dans l'article, Référence.
 
 La génération s'arrête avec un message explicite si : identifiant dupliqué ou inconnu, notion absente
-d'un domaine ou du parcours, prérequis placé après la notion, incohérence entre niveau et année,
-fiche ou renvoi vers une notion inexistante.
+d'un domaine ou du parcours, prérequis placé après la notion (ce qui exclut aussi tout cycle),
+incohérence entre niveau et année, fiche ou renvoi vers une notion inexistante.
+
+## Versions
+
+Une version par année universitaire (étiquette git `vAAAA.N`, voir `CHANGELOG.md`) ; la version
+affichée dans la page est lue dans `data/config.yml`.
+
+## Licence
+
+Code : MIT (`LICENSE`). Contenus pédagogiques (`data/`, `fiches/`) : licence à arrêter avec
+l'Université de Rennes.

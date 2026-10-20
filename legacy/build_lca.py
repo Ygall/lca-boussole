@@ -39,7 +39,7 @@ from xml.sax.saxutils import escape
 import markdown
 import yaml
 
-RACINE = Path(__file__).resolve().parent
+RACINE = Path(__file__).resolve().parent.parent  # script déplacé dans legacy/
 COUL = {"A": "#534AB7", "B": "#0F6E56", "C": "#993C1D", "D": "#185FA5"}
 FOND = {"A": "#EEEDFE", "B": "#E1F5EE", "C": "#FAECE7", "D": "#E6F1FB"}
 TEXTE = {"A": "#26215C", "B": "#04342C", "C": "#4A1B0C", "D": "#042C53"}
