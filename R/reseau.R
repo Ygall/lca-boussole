@@ -39,7 +39,9 @@ dot_reseau <- function(ref) {
 
 # grViz() échappe les apostrophes (d'évaluation -> d\'évaluation), ce que viz.js refuse :
 # on transmet le DOT brut à export_svg() sous la forme du widget qu'elle attend.
+# export_svg() lit viz.js dans le paquet DiagrammeR : dépendance déclarée explicitement pour renv.
 svg_reseau <- function(dot) {
+  stopifnot(requireNamespace("DiagrammeR", quietly = TRUE))
   DiagrammeRsvg::export_svg(list(x = list(diagram = dot, config = list(engine = "dot", options = NULL))))
 }
 

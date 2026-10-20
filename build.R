@@ -16,6 +16,7 @@ sortie <- "_output"
 # 1. Contrôles : arrêt avec message explicite en cas d'incohérence
 ref <- charger()
 fiches <- construire_fiches(ref)
+testthat::test_dir("tests/testthat", reporter = "summary", stop_on_failure = TRUE)
 
 # 2. Page HTML
 quarto::quarto_render("index.qmd", quiet = TRUE)
