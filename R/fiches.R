@@ -42,7 +42,7 @@ analyser_fiches <- function(ref, racine = ".") {
     x <- info[[i]]
     tete <- paste0(
       "# ", n3(info, i), ". ", x$libelle, "\n\n",
-      "Phase ", x$phase, " - [", x$code, "] - ", if (x$annee == 1) "Base" else "Avancé", "\n\n",
+      "Phase ", x$phase, " - [", x$code, "] - ", if (x$niveau == "base") "Base" else "Avancé", "\n\n",
       "**Prérequis :** ", liste(x$prerequis), "\n\n",
       "**Ouvre vers :** ", liste(x$dependants), "\n\n"
     )

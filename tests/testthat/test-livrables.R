@@ -36,7 +36,7 @@ test_that("les données injectées ne ferment pas la balise script", {
   ref <- charger(RACINE)
   js <- donnees_js(ref, construire_fiches(ref, RACINE))
   expect_false(grepl("</script", js, fixed = TRUE))
-  expect_match(js, '"n036":{"num":"036","t":"Rapport de cotes","c":"B7","p":5,"lvl":"base"}', fixed = TRUE)
+  expect_match(js, '"n036":{"num":"036","t":"Rapport de cotes","c":"B7","p":5,"lvl":"base","d":"Rapport des cotes', fixed = TRUE)
 })
 
 test_that("le SVG intégré ne contient aucun lien (Pandoc les rendrait cliquables)", {
@@ -44,4 +44,21 @@ test_that("le SVG intégré ne contient aucun lien (Pandoc les rendrait cliquabl
   expect_false(grepl("<a ", svg, fixed = TRUE))
   expect_match(svg, '<svg id="net"', fixed = TRUE)
   expect_equal(length(gregexpr('class="node"', svg, fixed = TRUE)[[1]]), 143)
+})
+
+test_that("le mapping JSON pour le skill est complet et cohérent", {
+  ref <- charger(RACINE)
+  dir <- withr::local_tempdir()
+  exporter_mapping(ref, construire_fiches(ref, RACINE), dir, RACINE)
+  m <- jsonlite::fromJSON(file.path(dir, "boussole_lca_notions.json"), simplifyVector = FALSE)
+  expect_equal(m$format, "boussole-lca/mapping-notions")
+  expect_equal(m$version, as.character(ref$cfg$version))
+  expect_length(m$notions, 143)
+  expect_equal(m$effectifs[c("base", "avance", "fiches")], list(base = 81L, avance = 62L, fiches = 4L))
+  or <- Filter(function(n) n$id == "rapport-de-cotes", m$notions)[[1]]
+  expect_equal(or[c("numero", "niveau", "code", "phase", "fiche")], list(numero = "036", niveau = "base", code = "B7", phase = 5L, fiche = TRUE))
+  expect_equal(or$prerequis, list(list(id = "risque-relatif", numero = "032")))
+  expect_true("odds ratio" %in% unlist(or$termes_en))
+  expect_equal(Filter(function(n) n$id == "structure-imrad", m$notions)[[1]]$prerequis, list())
+  expect_false(any(grepl("année|annee", readLines(file.path(dir, "boussole_lca_notions.json"), encoding = "UTF-8"), ignore.case = TRUE)))
 })

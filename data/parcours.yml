@@ -1,7 +1,9 @@
 # Parcours : phases ordonnées. L'ordre des notions dans les phases fixe leur numéro (001 à N).
 # prerequis : identifiants des prérequis directs, qui doivent précéder la notion dans le parcours.
+# niveau : base ou avance ; les phases de base précèdent les phases avancées, et chaque notion
+# doit avoir le niveau de sa phase (défini dans domaines.yml).
 - numero: 1
-  annee: 1
+  niveau: base
   titre: Lire un article et poser la question
   notions:
   - id: structure-imrad
@@ -17,7 +19,7 @@
   - id: hypothese-testee
     prerequis: [objectif-principal-et-secondaires]
 - numero: 2
-  annee: 1
+  niveau: base
   titre: Identifier le schéma d'étude
   notions:
   - id: observationnel-vs-experimental
@@ -39,7 +41,7 @@
   - id: niveaux-de-preuve-has
     prerequis: [essai-controle-randomise, revue-systematique-vs-narrative]
 - numero: 3
-  annee: 1
+  niveau: base
   titre: Population et critères de jugement
   notions:
   - id: population-source-cible-etudiee
@@ -59,7 +61,7 @@
   - id: mesure-en-aveugle
     prerequis: [critere-principal-unique-et-prespecifie]
 - numero: 4
-  annee: 1
+  niveau: base
   titre: Décrire les données
   notions:
   - id: effectifs-et-pourcentages
@@ -75,7 +77,7 @@
   - id: lecture-du-tableau-1
     prerequis: [effectifs-et-pourcentages, mediane-et-intervalle-interquartile]
 - numero: 5
-  annee: 1
+  niveau: base
   titre: Mesurer fréquence et association
   notions:
   - id: prevalence
@@ -93,7 +95,7 @@
   - id: rapport-de-cotes
     prerequis: [risque-relatif]
 - numero: 6
-  annee: 1
+  niveau: base
   titre: Inférence et nombre de sujets
   notions:
   - id: hypotheses-h0-et-h1-valeur-de-p
@@ -115,7 +117,7 @@
   - id: hypotheses-du-calcul
     prerequis: [effet-attendu]
 - numero: 7
-  annee: 1
+  niveau: base
   titre: Biais et validité
   notions:
   - id: biais-de-selection
@@ -129,7 +131,7 @@
   - id: validite-interne-et-externe
     prerequis: [biais-de-selection, biais-de-classement-differentiel-ou-non, facteur-de-confusion]
 - numero: 8
-  annee: 1
+  niveau: base
   titre: Essai randomisé
   notions:
   - id: equipoise
@@ -149,7 +151,7 @@
   - id: intention-de-traiter-vs-per-protocole
     prerequis: [perdus-de-vue, randomisation]
 - numero: 9
-  annee: 1
+  niveau: base
   titre: Cohorte et cas-témoins
   notions:
   - id: definition-des-groupes-et-de-l-exposition
@@ -179,7 +181,7 @@
   - id: rapport-de-cotes-seule-mesure-estimable
     prerequis: [rapport-de-cotes, impossibilite-d-estimer-incidence-et-prevalence]
 - numero: 10
-  annee: 1
+  niveau: base
   titre: Test diagnostique et synthèse
   notions:
   - id: test-de-reference
@@ -193,7 +195,7 @@
   - id: estimation-groupee
     prerequis: [lecture-d-un-forest-plot]
 - numero: 11
-  annee: 1
+  niveau: base
   titre: Interpréter et conclure
   notions:
   - id: analyse-de-sensibilite-sous-groupes-interaction
@@ -207,7 +209,7 @@
   - id: conclusion-coherente-avec-les-resultats
     prerequis: [significativite-vs-pertinence-clinique, validite-interne-et-externe]
 - numero: 12
-  annee: 2
+  niveau: avance
   titre: Données de survie
   notions:
   - id: critere-de-type-delai-censure
@@ -229,7 +231,7 @@
   - id: biais-du-temps-immortel
     prerequis: [definition-des-groupes-et-de-l-exposition, critere-de-type-delai-censure]
 - numero: 13
-  annee: 2
+  niveau: avance
   titre: Confusion, modélisation et causalité
   notions:
   - id: fraction-attribuable
@@ -263,7 +265,7 @@
   - id: criteres-de-bradford-hill
     prerequis: [causalite-inverse, validite-interne-et-externe]
 - numero: 14
-  annee: 2
+  niveau: avance
   titre: Critères de jugement et mesure
   notions:
   - id: critere-composite
@@ -281,7 +283,7 @@
   - id: changement-de-critere-a-posteriori
     prerequis: [critere-principal-unique-et-prespecifie, protocole-publie-et-enregistrement]
 - numero: 15
-  annee: 2
+  niveau: avance
   titre: Plans d'essai et analyses avancées
   notions:
   - id: stratification-blocs-minimisation
@@ -317,7 +319,7 @@
   - id: sous-groupes-et-test-d-interaction
     prerequis: [analyse-de-sensibilite-sous-groupes-interaction, multiplicite-des-tests]
 - numero: 16
-  annee: 2
+  niveau: avance
   titre: Diagnostic avancé et méta-analyse
   notions:
   - id: rapports-de-vraisemblance
@@ -337,7 +339,7 @@
   - id: funnel-plot-biais-de-publication
     prerequis: [lecture-d-un-forest-plot]
 - numero: 17
-  annee: 2
+  niveau: avance
   titre: Jugement critique et niveau de preuve
   notions:
   - id: coherence-externe

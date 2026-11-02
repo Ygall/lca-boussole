@@ -40,12 +40,13 @@ donnees_js <- function(ref, fiches) {
   info <- ref$info
   phases <- lapply(ref$parc, function(ph) {
     ids <- vapply(ph$notions, function(n) n$id, character(1))
-    list(k = ph$numero, l = sprintf("Phase %s. %s", ph$numero, ph$titre), an = sprintf("Année %s", ph$annee),
+    list(k = ph$numero, l = sprintf("Phase %s. %s", ph$numero, ph$titre), niv = LIBELLE_NIVEAU[[ph$niveau]],
          ids = I(paste0("n", n3(info, ids))))
   })
   pdata <- lapply(ref$ordre, function(i) {
     x <- info[[i]]
-    list(num = n3(info, i), t = x$libelle, c = x$code, p = x$phase, lvl = if (x$annee == 1) "base" else "avancé")
+    list(num = n3(info, i), t = x$libelle, c = x$code, p = x$phase,
+         lvl = if (x$niveau == "base") "base" else "avancé", d = x$description)
   })
   names(pdata) <- paste0("n", n3(info, ref$ordre))
   paste0(

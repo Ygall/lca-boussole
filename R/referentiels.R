@@ -6,6 +6,7 @@
 COUL  <- c(A = "#534AB7", B = "#0F6E56", C = "#993C1D", D = "#185FA5")
 FOND  <- c(A = "#EEEDFE", B = "#E1F5EE", C = "#FAECE7", D = "#E6F1FB")
 TEXTE <- c(A = "#26215C", B = "#04342C", C = "#4A1B0C", D = "#042C53")
+LIBELLE_NIVEAU <- c(base = "Notions de base", avance = "Notions avancées")
 
 lire_yaml <- function(racine, nom) {
   yaml::read_yaml(file.path(racine, "data", nom), fileEncoding = "UTF-8")
@@ -54,9 +55,19 @@ analyser_referentiels <- function(ref) {
     }
   }
 
-  # parcours : numérotation, prérequis antérieurs, cohérence année/niveau
+  # parcours : numérotation, prérequis antérieurs, cohérence niveau de la phase / niveau de la notion,
+  # phases de base avant les phases avancées
   ordre <- character()
+  avancees_commencees <- FALSE
   for (ph in ref$parc) {
+    if (!identical(ph$niveau, "base") && !identical(ph$niveau, "avance")) {
+      ajouter("phase ", ph$numero, " : niveau ", format(ph$niveau), " invalide (base ou avance attendu)")
+      next
+    }
+    if (ph$niveau == "avance") avancees_commencees <- TRUE
+    if (ph$niveau == "base" && avancees_commencees) {
+      ajouter("phase ", ph$numero, " : phase de base placée après une phase avancée")
+    }
     for (n in ph$notions) {
       i <- n$id
       if (i %in% ordre) {
@@ -71,13 +82,11 @@ analyser_referentiels <- function(ref) {
       for (p in pre) {
         if (!p %in% ordre) ajouter(i, " : prérequis ", p, " inconnu ou placé après la notion")
       }
-      if ((ph$annee == 1) != (info[[i]]$niveau == "base")) {
-        ajouter(i, " : niveau ", info[[i]]$niveau, " incohérent avec l'année ", ph$annee)
+      if (ph$niveau != info[[i]]$niveau) {
+        ajouter(i, " : niveau ", info[[i]]$niveau, " incohérent avec la phase ", ph$numero, " (", ph$niveau, ")")
       }
       ordre <- c(ordre, i)
-      info[[i]] <- c(info[[i]], list(
-        num = length(ordre), phase = ph$numero, annee = ph$annee, prerequis = pre
-      ))
+      info[[i]] <- c(info[[i]], list(num = length(ordre), phase = ph$numero, prerequis = pre))
     }
   }
   manquants <- setdiff(names(info), ordre)
@@ -85,11 +94,30 @@ analyser_referentiels <- function(ref) {
   orphelines <- setdiff(names(lib), names(info))
   if (length(orphelines)) ajouter("notions orphelines dans notions.yml : ", paste(sort(orphelines), collapse = ", "))
 
+  # notions.yml : libellé et description obligatoires, termes anglais sous forme de liste
+  for (i in names(lib)) {
+    x <- lib[[i]]
+    if (!is.list(x)) {
+      ajouter("notion ", i, " : entrée attendue avec libelle, description, termes_en")
+      next
+    }
+    for (champ in c("libelle", "description")) {
+      if (!is.character(x[[champ]]) || length(x[[champ]]) != 1 || !nzchar(trimws(x[[champ]]))) {
+        ajouter("notion ", i, " : ", champ, " manquant dans notions.yml")
+      }
+    }
+    if (!is.null(x$termes_en) && !is.character(unlist(x$termes_en))) {
+      ajouter("notion ", i, " : termes_en doit être une liste de termes")
+    }
+  }
+
   if (length(err)) return(list(erreurs = err, info = NULL, ordre = NULL))
 
   for (i in ordre) {
     d <- as.character(info[[i]]$domaine)
-    info[[i]]$libelle <- lib[[i]]
+    info[[i]]$libelle <- lib[[i]]$libelle
+    info[[i]]$description <- trimws(lib[[i]]$description)
+    info[[i]]$termes_en <- as.character(unlist(lib[[i]]$termes_en))
     info[[i]]$cat <- cat_of_dom[[d]]
     info[[i]]$code <- paste0(cat_of_dom[[d]], d)
     info[[i]]$dependants <- character()

@@ -4,7 +4,7 @@
     {
       "name": "output",
       "runtimeExecutable": "Rscript",
-      "runtimeArgs": ["-e", "httpuv::runStaticServer('_output', port = 4321, browse = FALSE)"],
+      "runtimeArgs": ["--vanilla", "-e", "httpuv::runStaticServer('_output', port = 4321, browse = FALSE)"],
       "port": 4321
     }
   ]

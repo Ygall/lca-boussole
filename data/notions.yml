@@ -1,145 +1,578 @@
-# Libellés des notions, indexés par identifiant stable.
-# Un identifiant ne doit jamais être modifié ni réutilisé : il sert de clé aux fiches et aux prérequis.
-structure-imrad: Structure IMRaD
-rationnel-et-etat-des-connaissances: Rationnel et état des connaissances
-question-de-recherche-pico: Question de recherche (PICO)
-objectif-principal-et-secondaires: Objectif principal et secondaires
-hypothese-testee: Hypothèse testée
-niveaux-de-preuve-has: Niveaux de preuve HAS
-vocabulaire-methodologique-anglais: Vocabulaire méthodologique anglais
-grade-certitude-et-force: 'GRADE : certitude et force'
-protocole-publie-et-enregistrement: Protocole publié et enregistrement
-science-ouverte-partage-des-donnees: Science ouverte, partage des données
-observationnel-vs-experimental: Observationnel vs expérimental
-descriptif-vs-analytique: Descriptif vs analytique
-etude-transversale: Étude transversale
-cohorte-prospective-ou-retrospective: Cohorte prospective ou rétrospective
-etude-cas-temoins: Étude cas-témoins
-essai-controle-randomise: Essai contrôlé randomisé
-etude-d-evaluation-diagnostique: Étude d'évaluation diagnostique
-essai-en-grappes: Essai en grappes
-plan-croise-plan-factoriel: Plan croisé, plan factoriel
-emulation-d-essai-cible: Émulation d'essai cible
-bases-medico-administratives-registres: Bases médico-administratives, registres
-criteres-d-inclusion-et-de-non-inclusion: Critères d'inclusion et de non-inclusion
-population-source-cible-etudiee: Population source, cible, étudiée
-recrutement-periode-centres: Recrutement, période, centres
-diagramme-de-flux: Diagramme de flux
-perdus-de-vue: Perdus de vue
-methodes-d-echantillonnage: Méthodes d'échantillonnage
-effet-de-grappe-et-icc: Effet de grappe et ICC
-gestion-des-donnees-manquantes: Gestion des données manquantes
-critere-principal-unique-et-prespecifie: Critère principal unique et préspécifié
-criteres-secondaires: Critères secondaires
-nature-binaire-ou-quantitative: Nature binaire ou quantitative
-mesure-en-aveugle: Mesure en aveugle
-critere-de-type-delai-censure: Critère de type délai, censure
-critere-composite: Critère composite
-critere-intermediaire-de-substitution: Critère intermédiaire de substitution
-proms-et-echelles-validees: PROMs et échelles validées
-comite-d-adjudication: Comité d'adjudication
-changement-de-critere-a-posteriori: Changement de critère a posteriori
-risques-concurrents: Risques concurrents
-risques-alpha-et-beta-puissance: Risques alpha et bêta, puissance
-effet-attendu: Effet attendu
-hypotheses-du-calcul: Hypothèses du calcul
-nsn-en-non-inferiorite: NSN en non-infériorité
-inflation-pour-attrition: Inflation pour attrition
-analyses-intermediaires-depense-d-alpha: Analyses intermédiaires, dépense d'alpha
-types-de-variables-qualitative-quantitative: 'Types de variables : qualitative, quantitative'
-effectifs-et-pourcentages: Effectifs et pourcentages
-moyenne-et-ecart-type: Moyenne et écart-type
-mediane-et-intervalle-interquartile: Médiane et intervalle interquartile
-ecart-type-vs-erreur-standard: Écart-type vs erreur standard
-lecture-du-tableau-1: Lecture du tableau 1
-difference-standardisee-entre-groupes: Différence standardisée entre groupes
-kaplan-meier-et-censure: Kaplan-Meier et censure
-sujets-a-risque-mediane-de-survie: Sujets à risque, médiane de survie
-prevalence: Prévalence
-incidence-cumulee-taux-d-incidence: Incidence cumulée, taux d'incidence
-risque-relatif: Risque relatif
-rapport-de-cotes: Rapport de cotes
-reduction-relative-du-risque: Réduction relative du risque
-difference-de-risque: Différence de risque
-nnt-et-nnh: NNT et NNH
-analyse-de-sensibilite-sous-groupes-interaction: Analyse de sensibilité, sous-groupes, interaction
-lecture-d-un-hazard-ratio: Lecture d'un hazard ratio
-fraction-attribuable: Fraction attribuable
-difference-de-moyennes-standardisee: Différence de moyennes standardisée
-hypotheses-h0-et-h1-valeur-de-p: Hypothèses H0 et H1, valeur de p
-intervalle-de-confiance-a-95: Intervalle de confiance à 95 %
-tests-usuels-chi2-student-wilcoxon: 'Tests usuels : chi2, Student, Wilcoxon'
-significativite-vs-pertinence-clinique: Significativité vs pertinence clinique
-taille-de-l-effet: Taille de l'effet
-test-du-log-rank: Test du log-rank
-multiplicite-des-tests: Multiplicité des tests
-sous-groupes-et-test-d-interaction: Sous-groupes et test d'interaction
-regressions-lineaire-logistique-cox: Régressions linéaire, logistique, Cox
-ajustement: Ajustement
-hypothese-des-risques-proportionnels: Hypothèse des risques proportionnels
-score-de-propension: Score de propension
-biais-de-selection: Biais de sélection
-biais-de-classement-differentiel-ou-non: Biais de classement, différentiel ou non
-facteur-de-confusion: Facteur de confusion
-validite-interne-et-externe: Validité interne et externe
-biais-d-attrition: Biais d'attrition
-biais-d-indication: Biais d'indication
-biais-de-collision: Biais de collision
-causalite-inverse: Causalité inverse
-regression-vers-la-moyenne: Régression vers la moyenne
-criteres-de-bradford-hill: Critères de Bradford Hill
-coherence-externe: Cohérence externe
-conclusion-coherente-avec-les-resultats: Conclusion cohérente avec les résultats
-limites-declarees: Limites déclarées
-applicabilite-a-la-pratique: Applicabilité à la pratique
-financement-et-liens-d-interets: Financement et liens d'intérêts
-ethique-et-consentement: Éthique et consentement
-spin-et-sur-interpretation: Spin et sur-interprétation
-absence-de-preuve-et-preuve-d-absence: Absence de preuve et preuve d'absence
-grilles-equator-consort-strobe-stard-prisma: 'Grilles EQUATOR : CONSORT, STROBE, STARD, PRISMA'
-limites-non-declarees: Limites non déclarées
-randomisation: Randomisation
-assignation-secrete: Assignation secrète
-equipoise: Équipoise
-insu-patient-soignant-evaluateur: 'Insu : patient, soignant, évaluateur'
-comparabilite-initiale-tableau-1: Comparabilité initiale (tableau 1)
-placebo-vs-traitement-de-reference: Placebo vs traitement de référence
-intention-de-traiter-vs-per-protocole: Intention de traiter vs per protocole
-stratification-blocs-minimisation: Stratification, blocs, minimisation
-superiorite-non-inferiorite-equivalence: Supériorité, non-infériorité, équivalence
-marge-de-non-inferiorite: Marge de non-infériorité
-itt-modifiee: ITT modifiée
-arret-premature: Arrêt prématuré
-contamination-cross-over: Contamination, cross-over
-definition-des-groupes-et-de-l-exposition: Définition des groupes et de l'exposition
-absence-de-l-evenement-a-l-inclusion: Absence de l'événement à l'inclusion
-anteriorite-de-l-exposition-sur-l-evenement: Antériorité de l'exposition sur l'événement
-duree-et-completude-du-suivi-perdus-de-vue-differentiels: Durée et complétude du suivi, perdus de vue différentiels
-incidence-et-personnes-temps: Incidence et personnes-temps
-risque-relatif-cohorte: Risque relatif
-biais-du-temps-immortel: Biais du temps immortel
-effet-travailleur-sain: Effet travailleur sain
-censure-informative: Censure informative
-definition-et-source-des-cas: Définition et source des cas
-choix-et-source-des-temoins: Choix et source des témoins
-appariement-principe-et-facteurs: 'Appariement : principe et facteurs'
-recueil-retrospectif-de-l-exposition: Recueil rétrospectif de l'exposition
-biais-de-memorisation: Biais de mémorisation
-impossibilite-d-estimer-incidence-et-prevalence: Impossibilité d'estimer incidence et prévalence
-rapport-de-cotes-seule-mesure-estimable: Rapport de cotes, seule mesure estimable
-biais-de-selection-des-temoins-berkson: Biais de sélection des témoins (Berkson)
-analyse-appariee-regression-logistique-conditionnelle: Analyse appariée, régression logistique conditionnelle
-cas-temoins-nichee: Cas-témoins nichée
-sensibilite-specificite: Sensibilité, spécificité
-vpp-vpn-et-prevalence: VPP, VPN et prévalence
-test-de-reference: Test de référence
-rapports-de-vraisemblance: Rapports de vraisemblance
-courbe-roc-auc-choix-du-seuil: Courbe ROC, AUC, choix du seuil
-biais-de-spectre-de-verification-d-incorporation: Biais de spectre, de vérification, d'incorporation
-reproductibilite-kappa-icc: 'Reproductibilité : kappa, ICC'
-revue-systematique-vs-narrative: Revue systématique vs narrative
-lecture-d-un-forest-plot: Lecture d'un forest plot
-estimation-groupee: Estimation groupée
-heterogeneite-q-i2: 'Hétérogénéité : Q, I²'
-effets-fixes-vs-aleatoires: Effets fixes vs aléatoires
-funnel-plot-biais-de-publication: Funnel plot, biais de publication
+# Notions, indexées par identifiant stable.
+# Un identifiant ne doit jamais être modifié ni réutilisé : il sert de clé aux fiches, aux prérequis
+# et aux outils externes (skill de création de sujets de LCA).
+#   libelle     : intitulé affiché
+#   description : une phrase qui dit ce que recouvre la notion et ce qu'on attend de l'étudiant en LCA
+#   termes_en   : formulations anglaises fréquentes dans les articles, pour repérer la notion
+structure-imrad:
+  libelle: Structure IMRaD
+  description: "Organisation d'un article original en Introduction, Méthodes, Résultats et Discussion, qui permet de savoir où chercher chaque information (objectif, schéma, critère principal, résultat, limites)."
+  termes_en: [Introduction, Methods, Results, Discussion, abstract]
+rationnel-et-etat-des-connaissances:
+  libelle: Rationnel et état des connaissances
+  description: "Justification de l'étude dans l'introduction : ce qui est connu, ce qui manque et pourquoi la question posée est utile."
+  termes_en: [background, rationale, knowledge gap]
+question-de-recherche-pico:
+  libelle: Question de recherche (PICO)
+  description: "Formulation de la question selon la Population, l'Intervention ou l'exposition, le Comparateur et le critère de jugement (Outcome), à reconstituer à partir de l'article."
+  termes_en: [research question, PICO, population, intervention, comparator, outcome]
+objectif-principal-et-secondaires:
+  libelle: Objectif principal et secondaires
+  description: "Objectif unique qui fonde le schéma et le calcul du nombre de sujets, distingué des objectifs secondaires qui sont exploratoires."
+  termes_en: [primary objective, secondary objectives, aim]
+hypothese-testee:
+  libelle: Hypothèse testée
+  description: "Hypothèse que l'étude cherche à confirmer (supériorité, non-infériorité, association), à distinguer d'une étude purement descriptive ou génératrice d'hypothèses."
+  termes_en: [hypothesis, we hypothesized, hypothesis-generating]
+niveaux-de-preuve-has:
+  libelle: Niveaux de preuve HAS
+  description: "Gradation du niveau de preuve scientifique selon le schéma d'étude (de l'essai randomisé et la méta-analyse aux séries de cas), utilisée pour qualifier la force d'une conclusion."
+  termes_en: [level of evidence, evidence hierarchy]
+vocabulaire-methodologique-anglais:
+  libelle: Vocabulaire méthodologique anglais
+  description: "Termes méthodologiques anglais courants à reconnaître et traduire, l'article étant en anglais et les questions en français."
+  termes_en: [randomized, blinded, endpoint, outcome, follow-up, hazard, odds, confidence interval]
+grade-certitude-et-force:
+  libelle: "GRADE : certitude et force"
+  description: "Système qui cote la certitude des preuves (élevée à très faible) selon le risque de biais, l'incohérence, le caractère indirect, l'imprécision et le biais de publication, et la force d'une recommandation."
+  termes_en: [GRADE, certainty of evidence, quality of evidence, strong recommendation, weak recommendation]
+protocole-publie-et-enregistrement:
+  libelle: Protocole publié et enregistrement
+  description: "Enregistrement préalable de l'étude dans un registre et publication du protocole, qui permettent de vérifier que critère principal et analyses n'ont pas été modifiés après coup."
+  termes_en: [trial registration, ClinicalTrials.gov, registered, study protocol, statistical analysis plan, PROSPERO]
+science-ouverte-partage-des-donnees:
+  libelle: Science ouverte, partage des données
+  description: "Mise à disposition des données, du code et des documents de l'étude, qui conditionne la reproductibilité et la vérification indépendante des résultats."
+  termes_en: [data sharing statement, open science, data availability, open access]
+observationnel-vs-experimental:
+  libelle: Observationnel vs expérimental
+  description: "Distinction selon que l'investigateur attribue l'intervention (étude expérimentale) ou se contente d'observer l'exposition (étude observationnelle)."
+  termes_en: [observational study, interventional study, experimental study]
+descriptif-vs-analytique:
+  libelle: Descriptif vs analytique
+  description: "Distinction entre une étude qui décrit une fréquence ou une distribution et une étude qui compare des groupes pour rechercher une association."
+  termes_en: [descriptive study, analytical study]
+etude-transversale:
+  libelle: Étude transversale
+  description: "Étude observationnelle où exposition et maladie sont mesurées au même moment, qui estime une prévalence mais ne permet pas d'établir l'antériorité de l'exposition."
+  termes_en: [cross-sectional study, survey, prevalence study]
+cohorte-prospective-ou-retrospective:
+  libelle: Cohorte prospective ou rétrospective
+  description: "Étude qui suit des sujets classés selon leur exposition jusqu'à la survenue de l'événement, le recueil pouvant être prospectif ou reconstitué à partir de données existantes (rétrospectif)."
+  termes_en: [cohort study, prospective cohort, retrospective cohort, follow-up]
+etude-cas-temoins:
+  libelle: Étude cas-témoins
+  description: "Étude qui compare l'exposition passée de sujets malades (cas) et de sujets non malades (témoins), adaptée aux maladies rares."
+  termes_en: [case-control study, cases, controls]
+essai-controle-randomise:
+  libelle: Essai contrôlé randomisé
+  description: "Étude expérimentale où l'intervention est attribuée par tirage au sort et comparée à un groupe contrôle, schéma de référence pour démontrer un effet causal."
+  termes_en: [randomized controlled trial, RCT, randomised trial, controlled trial]
+etude-d-evaluation-diagnostique:
+  libelle: Étude d'évaluation diagnostique
+  description: "Étude qui compare les résultats d'un test à ceux d'un test de référence chez les mêmes sujets pour en estimer les performances."
+  termes_en: [diagnostic accuracy study, index test, reference standard]
+essai-en-grappes:
+  libelle: Essai en grappes
+  description: "Essai où ce sont des groupes de sujets (services, centres, cabinets) qui sont randomisés, ce qui impose de tenir compte de la corrélation intra-grappe."
+  termes_en: [cluster randomized trial, cluster-randomised, stepped-wedge]
+plan-croise-plan-factoriel:
+  libelle: Plan croisé, plan factoriel
+  description: "Plans d'essai particuliers : chaque sujet reçoit successivement les traitements (croisé, avec période de wash-out), ou plusieurs interventions sont testées simultanément (factoriel)."
+  termes_en: [crossover trial, washout period, factorial design, 2x2 factorial]
+emulation-d-essai-cible:
+  libelle: Émulation d'essai cible
+  description: "Analyse de données observationnelles construite pour reproduire le protocole d'un essai randomisé hypothétique (éligibilité, début du suivi, stratégies comparées) afin de limiter les biais."
+  termes_en: [target trial emulation, emulated trial, time zero]
+bases-medico-administratives-registres:
+  libelle: Bases médico-administratives, registres
+  description: "Sources de données recueillies hors recherche (SNDS, PMSI, registres), exhaustives et volumineuses mais exposées aux erreurs de codage et à l'absence de certaines variables."
+  termes_en: [administrative database, claims data, registry, electronic health records, SNDS]
+criteres-d-inclusion-et-de-non-inclusion:
+  libelle: Critères d'inclusion et de non-inclusion
+  description: "Critères qui définissent les sujets éligibles et conditionnent la population étudiée, donc l'extrapolation des résultats."
+  termes_en: [inclusion criteria, exclusion criteria, eligibility criteria]
+population-source-cible-etudiee:
+  libelle: Population source, cible, étudiée
+  description: "Distinction entre la population à laquelle on veut appliquer les résultats (cible), celle dans laquelle on recrute (source) et l'échantillon effectivement analysé (étudiée)."
+  termes_en: [target population, source population, study population, study sample]
+recrutement-periode-centres:
+  libelle: Recrutement, période, centres
+  description: "Conditions de recrutement (lieux, nombre de centres, période, mode de sélection) qui renseignent sur la représentativité de l'échantillon."
+  termes_en: [recruitment, enrolled, multicenter, single-center, study period, setting]
+diagramme-de-flux:
+  libelle: Diagramme de flux
+  description: "Figure qui retrace le nombre de sujets à chaque étape (éligibles, inclus, randomisés, suivis, analysés) et permet de repérer exclusions et perdus de vue."
+  termes_en: [flow chart, flow diagram, CONSORT diagram, screened, excluded]
+perdus-de-vue:
+  libelle: Perdus de vue
+  description: "Sujets dont le suivi s'interrompt avant la fin de l'étude, dont le nombre et la répartition entre groupes menacent la validité des résultats."
+  termes_en: [lost to follow-up, withdrawal, dropout, discontinued]
+methodes-d-echantillonnage:
+  libelle: Méthodes d'échantillonnage
+  description: "Façon de tirer l'échantillon (aléatoire simple, stratifié, en grappes, de convenance), qui conditionne sa représentativité de la population source."
+  termes_en: [random sampling, stratified sampling, cluster sampling, convenience sample, consecutive patients]
+effet-de-grappe-et-icc:
+  libelle: Effet de grappe et ICC
+  description: "Ressemblance des sujets d'une même grappe, mesurée par le coefficient de corrélation intraclasse, qui réduit l'information apportée par chaque sujet et augmente le nombre de sujets nécessaire."
+  termes_en: [intracluster correlation coefficient, ICC, design effect, clustering]
+gestion-des-donnees-manquantes:
+  libelle: Gestion des données manquantes
+  description: "Méthodes de prise en compte des données manquantes (analyse des cas complets, imputation simple ou multiple) et leurs hypothèses, avec l'analyse de sensibilité qui en teste l'impact."
+  termes_en: [missing data, multiple imputation, complete case analysis, last observation carried forward, LOCF]
+critere-principal-unique-et-prespecifie:
+  libelle: Critère principal unique et préspécifié
+  description: "Critère de jugement unique, défini avant l'étude, sur lequel portent le calcul du nombre de sujets et la conclusion principale."
+  termes_en: [primary endpoint, primary outcome, prespecified]
+criteres-secondaires:
+  libelle: Critères secondaires
+  description: "Critères complémentaires dont les résultats sont exploratoires et ne permettent pas de conclure lorsque le critère principal n'est pas significatif."
+  termes_en: [secondary endpoints, secondary outcomes, exploratory outcomes]
+nature-binaire-ou-quantitative:
+  libelle: Nature binaire ou quantitative
+  description: "Type du critère de jugement (binaire, quantitatif, délai de survenue), qui détermine la mesure d'effet et le test statistique utilisés."
+  termes_en: [binary outcome, continuous outcome, dichotomous, time-to-event]
+mesure-en-aveugle:
+  libelle: Mesure en aveugle
+  description: "Évaluation du critère de jugement par une personne qui ignore le groupe ou l'exposition du sujet, pour éviter un biais de mesure."
+  termes_en: [blinded outcome assessment, outcome assessor blinded, masked assessment]
+critere-de-type-delai-censure:
+  libelle: Critère de type délai, censure
+  description: "Critère mesurant le temps jusqu'à la survenue d'un événement, avec des observations censurées pour les sujets sans événement à la fin de leur suivi."
+  termes_en: [time-to-event, survival, censored, censoring, event-free survival]
+critere-composite:
+  libelle: Critère composite
+  description: "Critère qui regroupe plusieurs événements, dont l'interprétation exige d'examiner chaque composante, notamment quand les moins graves dominent le résultat."
+  termes_en: [composite endpoint, composite outcome, MACE, components]
+critere-intermediaire-de-substitution:
+  libelle: Critère intermédiaire de substitution
+  description: "Critère biologique ou physiologique utilisé à la place d'un critère clinique, dont la validité dépend de la preuve que son amélioration prédit le bénéfice clinique."
+  termes_en: [surrogate endpoint, surrogate outcome, intermediate endpoint, biomarker]
+proms-et-echelles-validees:
+  libelle: PROMs et échelles validées
+  description: "Critères rapportés par le patient (qualité de vie, symptômes) mesurés par des échelles validées, dont il faut connaître la différence minimale cliniquement pertinente."
+  termes_en: [patient-reported outcome, PROM, quality of life, validated scale, minimal clinically important difference, MCID]
+comite-d-adjudication:
+  libelle: Comité d'adjudication
+  description: "Comité indépendant qui valide en aveugle les événements selon des définitions préétablies, pour garantir une mesure homogène du critère de jugement."
+  termes_en: [adjudication committee, clinical events committee, adjudicated]
+changement-de-critere-a-posteriori:
+  libelle: Changement de critère a posteriori
+  description: "Modification du critère principal ou de l'analyse après le début de l'étude, repérable par comparaison avec le registre ou le protocole, source de résultats biaisés."
+  termes_en: [outcome switching, protocol amendment, post hoc, selective outcome reporting]
+risques-concurrents:
+  libelle: Risques concurrents
+  description: "Événements (souvent le décès) qui empêchent la survenue de l'événement d'intérêt et faussent l'estimation de Kaplan-Meier s'ils sont traités comme des censures."
+  termes_en: [competing risks, Fine-Gray, subdistribution hazard, cumulative incidence function]
+risques-alpha-et-beta-puissance:
+  libelle: Risques alpha et bêta, puissance
+  description: "Risque alpha de conclure à tort à une différence, risque bêta de méconnaître une différence réelle, et puissance (1 - bêta) de mettre en évidence l'effet attendu."
+  termes_en: [type I error, type II error, alpha, power, statistical power]
+effet-attendu:
+  libelle: Effet attendu
+  description: "Différence minimale que l'étude veut pouvoir mettre en évidence, fixée a priori pour le calcul du nombre de sujets et qui doit être cliniquement pertinente."
+  termes_en: [expected effect, minimal clinically important difference, assumed difference, effect size]
+hypotheses-du-calcul:
+  libelle: Hypothèses du calcul
+  description: "Paramètres du calcul du nombre de sujets (alpha, puissance, fréquence dans le groupe contrôle, effet attendu, test uni- ou bilatéral), à confronter aux résultats observés."
+  termes_en: [sample size calculation, power calculation, sample size was calculated]
+nsn-en-non-inferiorite:
+  libelle: NSN en non-infériorité
+  description: "Calcul du nombre de sujets d'un essai de non-infériorité, fondé sur la marge de non-infériorité et généralement plus élevé que pour un essai de supériorité."
+  termes_en: [non-inferiority sample size, one-sided alpha, non-inferiority margin]
+inflation-pour-attrition:
+  libelle: Inflation pour attrition
+  description: "Majoration du nombre de sujets prévu pour compenser les perdus de vue attendus et préserver la puissance."
+  termes_en: [allowing for dropout, attrition rate, to account for loss to follow-up]
+analyses-intermediaires-depense-d-alpha:
+  libelle: Analyses intermédiaires, dépense d'alpha
+  description: "Analyses prévues en cours d'essai avec des seuils de signification ajustés (fonction de dépense d'alpha) pour conserver un risque alpha global de 5 %."
+  termes_en: [interim analysis, alpha spending, O'Brien-Fleming, stopping boundaries, data monitoring committee]
+types-de-variables-qualitative-quantitative:
+  libelle: "Types de variables : qualitative, quantitative"
+  description: "Distinction entre variables qualitatives (binaires, nominales, ordinales) et quantitatives (discrètes, continues), qui oriente la description et les tests."
+  termes_en: [categorical variable, continuous variable, ordinal, nominal]
+effectifs-et-pourcentages:
+  libelle: Effectifs et pourcentages
+  description: "Description d'une variable qualitative par son effectif et son pourcentage, en vérifiant le dénominateur utilisé."
+  termes_en: [n (%), number, proportion, percentage]
+moyenne-et-ecart-type:
+  libelle: Moyenne et écart-type
+  description: "Paramètres de position et de dispersion d'une variable quantitative de distribution symétrique ; l'écart-type décrit la variabilité entre individus."
+  termes_en: [mean, standard deviation, SD, mean ± SD]
+mediane-et-intervalle-interquartile:
+  libelle: Médiane et intervalle interquartile
+  description: "Paramètres de position et de dispersion d'une variable quantitative asymétrique, insensibles aux valeurs extrêmes."
+  termes_en: [median, interquartile range, IQR, range]
+ecart-type-vs-erreur-standard:
+  libelle: Écart-type vs erreur standard
+  description: "Distinction entre l'écart-type, qui mesure la dispersion des individus, et l'erreur standard, qui mesure la précision de l'estimation d'une moyenne et diminue quand l'effectif augmente."
+  termes_en: [standard deviation, standard error, SE, SEM]
+lecture-du-tableau-1:
+  libelle: Lecture du tableau 1
+  description: "Lecture du tableau des caractéristiques initiales pour décrire la population étudiée et apprécier l'extrapolation des résultats."
+  termes_en: [Table 1, baseline characteristics, demographic characteristics]
+difference-standardisee-entre-groupes:
+  libelle: Différence standardisée entre groupes
+  description: "Différence entre groupes rapportée à l'écart-type, utilisée pour juger l'équilibre d'une variable entre groupes (seuil usuel de 0,1) indépendamment de l'effectif, notamment après score de propension."
+  termes_en: [standardized mean difference, SMD, covariate balance, standardized difference]
+kaplan-meier-et-censure:
+  libelle: Kaplan-Meier et censure
+  description: "Estimateur de la probabilité de survie au cours du temps qui tient compte des données censurées, représenté par une courbe en escalier."
+  termes_en: [Kaplan-Meier, survival curve, censored, cumulative incidence]
+sujets-a-risque-mediane-de-survie:
+  libelle: Sujets à risque, médiane de survie
+  description: "Lecture d'une courbe de survie : nombre de sujets encore suivis sous la courbe, qui conditionne la fiabilité de sa partie droite, et médiane de survie, temps où la moitié des sujets ont présenté l'événement."
+  termes_en: [number at risk, median survival, median follow-up]
+prevalence:
+  libelle: Prévalence
+  description: "Proportion de sujets présentant la maladie à un moment donné dans une population, estimée par une étude transversale."
+  termes_en: [prevalence, point prevalence]
+incidence-cumulee-taux-d-incidence:
+  libelle: Incidence cumulée, taux d'incidence
+  description: "Mesures de survenue de nouveaux cas : proportion de sujets malades sur une période (incidence cumulée, ou risque) ou nombre de cas rapporté aux personnes-temps (taux d'incidence)."
+  termes_en: [cumulative incidence, incidence rate, risk, new cases]
+risque-relatif:
+  libelle: Risque relatif
+  description: "Rapport des risques de l'événement entre exposés et non exposés (ou entre groupes d'un essai), interprété par rapport à 1."
+  termes_en: [relative risk, risk ratio, RR]
+rapport-de-cotes:
+  libelle: Rapport de cotes
+  description: "Rapport des cotes de l'événement entre deux groupes, proche du risque relatif seulement si l'événement est rare, seule mesure estimable en cas-témoins et produite par la régression logistique."
+  termes_en: [odds ratio, OR, adjusted odds ratio, aOR]
+reduction-relative-du-risque:
+  libelle: Réduction relative du risque
+  description: "Diminution du risque exprimée en proportion du risque du groupe contrôle (1 - RR), qui paraît toujours plus impressionnante que la réduction absolue."
+  termes_en: [relative risk reduction, RRR]
+difference-de-risque:
+  libelle: Différence de risque
+  description: "Différence absolue des risques entre deux groupes, qui exprime l'effet en nombre d'événements évités ou provoqués et dépend du risque de base."
+  termes_en: [risk difference, absolute risk reduction, ARR, absolute difference]
+nnt-et-nnh:
+  libelle: NNT et NNH
+  description: "Nombre de sujets à traiter pour éviter un événement (NNT) ou en provoquer un (NNH), égal à l'inverse de la différence de risque sur une durée donnée."
+  termes_en: [number needed to treat, NNT, number needed to harm, NNH]
+analyse-de-sensibilite-sous-groupes-interaction:
+  libelle: Analyse de sensibilité, sous-groupes, interaction
+  description: "Analyses complémentaires qui testent la robustesse du résultat principal à d'autres hypothèses (sensibilité) ou en explorent l'homogénéité selon les caractéristiques des sujets (sous-groupes)."
+  termes_en: [sensitivity analysis, subgroup analysis, interaction]
+lecture-d-un-hazard-ratio:
+  libelle: Lecture d'un hazard ratio
+  description: "Rapport des risques instantanés de survenue de l'événement entre deux groupes, issu d'un modèle de Cox et supposé constant au cours du temps."
+  termes_en: [hazard ratio, HR, Cox model]
+fraction-attribuable:
+  libelle: Fraction attribuable
+  description: "Proportion des cas attribuables à l'exposition, chez les exposés ou dans la population, qui dépend du risque relatif et de la fréquence de l'exposition."
+  termes_en: [attributable fraction, population attributable fraction, attributable risk]
+difference-de-moyennes-standardisee:
+  libelle: Différence de moyennes standardisée
+  description: "Mesure d'effet sans unité (différence de moyennes divisée par l'écart-type, d de Cohen), utilisée pour comparer ou combiner des critères mesurés sur des échelles différentes."
+  termes_en: [standardized mean difference, SMD, Cohen's d, Hedges' g]
+hypotheses-h0-et-h1-valeur-de-p:
+  libelle: Hypothèses H0 et H1, valeur de p
+  description: "Logique du test statistique : probabilité d'observer un résultat au moins aussi extrême si l'hypothèse nulle est vraie, qui n'est ni la probabilité que H0 soit vraie ni une mesure de l'importance de l'effet."
+  termes_en: [null hypothesis, alternative hypothesis, p value, statistically significant]
+intervalle-de-confiance-a-95:
+  libelle: Intervalle de confiance à 95 %
+  description: "Fourchette de valeurs plausibles de l'effet réel, qui renseigne sur la précision de l'estimation et sur la significativité selon qu'elle contient ou non la valeur d'absence d'effet."
+  termes_en: [95% confidence interval, 95% CI, confidence limits]
+tests-usuels-chi2-student-wilcoxon:
+  libelle: "Tests usuels : chi2, Student, Wilcoxon"
+  description: "Choix du test selon le type de variable et les conditions d'application : chi2 ou Fisher pour les proportions, Student pour les moyennes, Wilcoxon ou Mann-Whitney en non paramétrique."
+  termes_en: [chi-square test, Fisher's exact test, t test, Wilcoxon, Mann-Whitney, nonparametric]
+significativite-vs-pertinence-clinique:
+  libelle: Significativité vs pertinence clinique
+  description: "Distinction entre un résultat statistiquement significatif et un effet assez grand pour importer au patient, jugée sur l'ampleur de l'effet et les bornes de l'intervalle de confiance."
+  termes_en: [statistical significance, clinical relevance, clinically meaningful, minimal clinically important difference]
+taille-de-l-effet:
+  libelle: Taille de l'effet
+  description: "Ampleur de la différence ou de l'association observée, exprimée par une mesure d'effet avec son intervalle de confiance, indépendamment de la valeur de p."
+  termes_en: [effect size, magnitude of effect, treatment effect, point estimate]
+test-du-log-rank:
+  libelle: Test du log-rank
+  description: "Test qui compare des courbes de survie sur l'ensemble du suivi, sans quantifier l'écart entre elles."
+  termes_en: [log-rank test, stratified log-rank]
+multiplicite-des-tests:
+  libelle: Multiplicité des tests
+  description: "Augmentation du risque de conclure à tort à un effet quand les tests se multiplient (critères, groupes, analyses), corrigée par un ajustement ou une procédure hiérarchique."
+  termes_en: [multiple comparisons, multiplicity, Bonferroni, hierarchical testing, family-wise error rate]
+sous-groupes-et-test-d-interaction:
+  libelle: Sous-groupes et test d'interaction
+  description: "Évaluation de la variation de l'effet selon une caractéristique, qui repose sur un test d'interaction et non sur la comparaison des valeurs de p de chaque sous-groupe."
+  termes_en: [subgroup analysis, test for interaction, P for interaction, effect modification, heterogeneity of treatment effect]
+regressions-lineaire-logistique-cox:
+  libelle: Régressions linéaire, logistique, Cox
+  description: "Modèles multivariés choisis selon le type de critère (quantitatif, binaire, délai), qui fournissent respectivement un coefficient, un rapport de cotes et un hazard ratio ajustés."
+  termes_en: [linear regression, logistic regression, Cox proportional hazards model, multivariable analysis]
+ajustement:
+  libelle: Ajustement
+  description: "Prise en compte de facteurs de confusion mesurés dans l'analyse (modèle multivarié, stratification) pour estimer une association indépendante, sans pouvoir corriger la confusion non mesurée."
+  termes_en: [adjusted, adjustment, multivariable, controlling for, covariates]
+hypothese-des-risques-proportionnels:
+  libelle: Hypothèse des risques proportionnels
+  description: "Condition du modèle de Cox selon laquelle le hazard ratio reste constant au cours du temps, mise en défaut quand les courbes de survie se croisent."
+  termes_en: [proportional hazards assumption, Schoenfeld residuals, crossing curves]
+score-de-propension:
+  libelle: Score de propension
+  description: "Probabilité estimée de recevoir le traitement selon les caractéristiques mesurées, utilisée par appariement, pondération ou ajustement pour rendre les groupes comparables en observationnel."
+  termes_en: [propensity score, propensity score matching, inverse probability weighting, IPTW]
+biais-de-selection:
+  libelle: Biais de sélection
+  description: "Erreur systématique liée à la façon dont les sujets sont inclus ou retenus dans l'analyse, qui rend les groupes non comparables ou l'échantillon non représentatif."
+  termes_en: [selection bias]
+biais-de-classement-differentiel-ou-non:
+  libelle: Biais de classement, différentiel ou non
+  description: "Erreur de mesure de l'exposition ou de l'événement ; non différentielle, elle tend à rapprocher l'estimation de 1, différentielle (selon le groupe), elle peut la biaiser dans les deux sens."
+  termes_en: [misclassification, information bias, measurement bias, differential misclassification]
+facteur-de-confusion:
+  libelle: Facteur de confusion
+  description: "Facteur lié à la fois à l'exposition et à l'événement sans être sur le chemin causal, qui crée ou masque une association."
+  termes_en: [confounding, confounder, confounding factor]
+validite-interne-et-externe:
+  libelle: Validité interne et externe
+  description: "Validité interne : absence de biais dans l'estimation de l'effet chez les sujets étudiés ; validité externe : possibilité d'extrapoler le résultat à d'autres populations."
+  termes_en: [internal validity, external validity, generalizability]
+biais-d-attrition:
+  libelle: Biais d'attrition
+  description: "Biais lié aux sorties d'étude et aux perdus de vue lorsqu'ils diffèrent entre groupes ou sont liés à l'événement."
+  termes_en: [attrition bias, differential loss to follow-up, dropout]
+biais-d-indication:
+  libelle: Biais d'indication
+  description: "Confusion propre aux études observationnelles de traitement : les patients traités diffèrent des non traités par la raison même de leur traitement (gravité, pronostic)."
+  termes_en: [confounding by indication, indication bias, channeling bias]
+biais-de-collision:
+  libelle: Biais de collision
+  description: "Biais créé en ajustant ou en sélectionnant sur une variable causée à la fois par l'exposition et par l'événement, qui fait apparaître une association artificielle."
+  termes_en: [collider bias, collider stratification, index event bias]
+causalite-inverse:
+  libelle: Causalité inverse
+  description: "Situation où c'est la maladie, ou ses premiers signes, qui modifie l'exposition, et non l'inverse."
+  termes_en: [reverse causation, reverse causality, protopathic bias]
+regression-vers-la-moyenne:
+  libelle: Régression vers la moyenne
+  description: "Tendance des valeurs extrêmes mesurées une première fois à se rapprocher de la moyenne à la mesure suivante, qui peut simuler un effet en l'absence de groupe contrôle."
+  termes_en: [regression to the mean]
+criteres-de-bradford-hill:
+  libelle: Critères de Bradford Hill
+  description: "Arguments en faveur d'une relation causale à partir d'études observationnelles : force, constance, spécificité, temporalité, relation dose-effet, plausibilité, cohérence, expérimentation, analogie."
+  termes_en: [Bradford Hill criteria, causality, dose-response, temporality, biological plausibility]
+coherence-externe:
+  libelle: Cohérence externe
+  description: "Concordance des résultats avec ceux des autres études et des connaissances physiopathologiques, discutée par les auteurs dans la discussion."
+  termes_en: [consistent with previous studies, in line with, external consistency]
+conclusion-coherente-avec-les-resultats:
+  libelle: Conclusion cohérente avec les résultats
+  description: "Vérification que la conclusion des auteurs découle du résultat sur le critère principal, sans extrapolation au-delà de la population et du schéma étudiés."
+  termes_en: [conclusion, in conclusion, our findings suggest]
+limites-declarees:
+  libelle: Limites déclarées
+  description: "Limites reconnues par les auteurs dans la discussion, dont il faut apprécier l'impact sur la validité des résultats."
+  termes_en: [limitations, strengths and limitations]
+applicabilite-a-la-pratique:
+  libelle: Applicabilité à la pratique
+  description: "Possibilité de transposer les résultats aux patients de la pratique courante, compte tenu de la population, du contexte, de l'intervention et du rapport bénéfice-risque."
+  termes_en: [applicability, generalizability, clinical practice, implications for practice]
+financement-et-liens-d-interets:
+  libelle: Financement et liens d'intérêts
+  description: "Origine du financement et liens d'intérêts des auteurs, et rôle du financeur dans la conception, l'analyse et la rédaction."
+  termes_en: [funding, sponsor, conflicts of interest, disclosures, role of the funder]
+ethique-et-consentement:
+  libelle: Éthique et consentement
+  description: "Conditions éthiques et réglementaires de l'étude : avis d'un comité d'éthique, information et consentement des participants."
+  termes_en: [ethics committee, institutional review board, IRB, informed consent, Declaration of Helsinki]
+spin-et-sur-interpretation:
+  libelle: Spin et sur-interprétation
+  description: "Présentation des résultats qui fait paraître le traitement plus favorable que ce que montrent les données, par exemple en mettant en avant des critères secondaires quand le critère principal est négatif."
+  termes_en: [spin, overinterpretation, misleading reporting]
+absence-de-preuve-et-preuve-d-absence:
+  libelle: Absence de preuve et preuve d'absence
+  description: "Un résultat non significatif ne prouve pas l'absence d'effet, surtout en cas de puissance insuffisante ou d'intervalle de confiance large."
+  termes_en: [absence of evidence, not statistically significant, no significant difference, underpowered]
+grilles-equator-consort-strobe-stard-prisma:
+  libelle: "Grilles EQUATOR : CONSORT, STROBE, STARD, PRISMA"
+  description: "Recommandations de rédaction propres à chaque schéma d'étude (essai, observationnel, diagnostique, revue systématique), utilisables comme grilles de lecture."
+  termes_en: [CONSORT, STROBE, STARD, PRISMA, EQUATOR network, reporting guideline]
+limites-non-declarees:
+  libelle: Limites non déclarées
+  description: "Limites méthodologiques que les auteurs ne mentionnent pas et que le lecteur doit identifier lui-même."
+  termes_en: [limitations]
+randomisation:
+  libelle: Randomisation
+  description: "Attribution du traitement par tirage au sort, qui répartit de façon équilibrée les facteurs pronostiques, connus ou non, entre les groupes."
+  termes_en: [randomization, randomly assigned, random allocation, computer-generated]
+assignation-secrete:
+  libelle: Assignation secrète
+  description: "Impossibilité pour l'investigateur de connaître ou prévoir le groupe d'allocation avant l'inclusion du patient (système centralisé, enveloppes scellées), qui protège la randomisation."
+  termes_en: [allocation concealment, concealed allocation, centralized randomization, sealed opaque envelopes]
+equipoise:
+  libelle: Équipoise
+  description: "Incertitude réelle de la communauté médicale sur le traitement le plus efficace, condition éthique de la réalisation d'un essai randomisé."
+  termes_en: [equipoise, clinical equipoise]
+insu-patient-soignant-evaluateur:
+  libelle: "Insu : patient, soignant, évaluateur"
+  description: "Méconnaissance du traitement attribué par le patient, le soignant et l'évaluateur, qui limite les biais de performance et de mesure ; on précise qui est en insu plutôt que « simple » ou « double aveugle »."
+  termes_en: [blinding, double-blind, single-blind, open-label, masked]
+comparabilite-initiale-tableau-1:
+  libelle: Comparabilité initiale (tableau 1)
+  description: "Vérification de l'équilibre des caractéristiques initiales entre groupes, jugée sur l'importance clinique des écarts et non sur des tests statistiques après randomisation."
+  termes_en: [baseline characteristics, balanced, well balanced between groups, Table 1]
+placebo-vs-traitement-de-reference:
+  libelle: Placebo vs traitement de référence
+  description: "Choix du comparateur : un placebo, éthique seulement en l'absence de traitement efficace, ou un traitement de référence administré de façon optimale."
+  termes_en: [placebo, active comparator, standard of care, usual care]
+intention-de-traiter-vs-per-protocole:
+  libelle: Intention de traiter vs per protocole
+  description: "L'analyse en intention de traiter garde chaque patient dans son groupe de randomisation et préserve la comparabilité ; l'analyse per protocole se limite aux patients ayant suivi le protocole."
+  termes_en: [intention-to-treat, ITT, per-protocol, as-treated]
+stratification-blocs-minimisation:
+  libelle: Stratification, blocs, minimisation
+  description: "Techniques de randomisation qui garantissent l'équilibre des effectifs et de facteurs pronostiques importants entre groupes (par centre ou par facteur)."
+  termes_en: [stratified randomization, block randomization, permuted blocks, minimization]
+superiorite-non-inferiorite-equivalence:
+  libelle: Supériorité, non-infériorité, équivalence
+  description: "Objectifs d'essai qui déterminent l'hypothèse testée et la lecture du résultat : démontrer qu'un traitement est meilleur, pas moins bon d'une marge définie, ou équivalent."
+  termes_en: [superiority, non-inferiority, equivalence trial]
+marge-de-non-inferiorite:
+  libelle: Marge de non-infériorité
+  description: "Perte d'efficacité maximale jugée acceptable, fixée a priori ; la non-infériorité est démontrée si la borne de l'intervalle de confiance ne franchit pas cette marge."
+  termes_en: [non-inferiority margin, delta, prespecified margin]
+itt-modifiee:
+  libelle: ITT modifiée
+  description: "Variante de l'intention de traiter excluant certains patients randomisés (n'ayant reçu aucune dose, sans évaluation), qui peut réintroduire un biais selon les critères d'exclusion."
+  termes_en: [modified intention-to-treat, mITT]
+arret-premature:
+  libelle: Arrêt prématuré
+  description: "Interruption d'un essai avant son terme (bénéfice, futilité, toxicité, recrutement insuffisant), un arrêt précoce pour bénéfice tendant à surestimer l'effet."
+  termes_en: [stopped early, early termination, futility, stopped for benefit]
+contamination-cross-over:
+  libelle: Contamination, cross-over
+  description: "Patients d'un groupe recevant tout ou partie de l'intervention de l'autre groupe, ce qui réduit l'écart observé entre les bras en intention de traiter."
+  termes_en: [contamination, crossover, treatment switching]
+definition-des-groupes-et-de-l-exposition:
+  libelle: Définition des groupes et de l'exposition
+  description: "Définition et mesure de l'exposition en cohorte (nature, dose, durée, source), qui conditionne le classement des sujets et la validité de la comparaison."
+  termes_en: [exposure, exposed, unexposed, exposure assessment]
+absence-de-l-evenement-a-l-inclusion:
+  libelle: Absence de l'événement à l'inclusion
+  description: "Exigence d'inclure en cohorte des sujets indemnes de l'événement étudié, pour mesurer des cas incidents."
+  termes_en: [free of disease at baseline, incident cases, excluded prevalent cases]
+anteriorite-de-l-exposition-sur-l-evenement:
+  libelle: Antériorité de l'exposition sur l'événement
+  description: "Garantie que l'exposition précède l'événement, argument majeur de causalité apporté par la cohorte et absent des études transversales."
+  termes_en: [temporality, temporal relationship, prior exposure]
+duree-et-completude-du-suivi-perdus-de-vue-differentiels:
+  libelle: Durée et complétude du suivi, perdus de vue différentiels
+  description: "Suivi suffisant pour observer l'événement et aussi complet que possible, les perdus de vue différents entre exposés et non exposés biaisant l'estimation."
+  termes_en: [follow-up duration, median follow-up, completeness of follow-up, loss to follow-up]
+incidence-et-personnes-temps:
+  libelle: Incidence et personnes-temps
+  description: "Calcul du taux d'incidence en rapportant le nombre de cas à la somme des durées de suivi individuelles, lorsque les sujets sont suivis sur des durées différentes."
+  termes_en: [person-years, incidence rate, per 1000 person-years]
+risque-relatif-cohorte:
+  libelle: Risque relatif
+  description: "Mesure d'association propre à la cohorte, rapport d'incidence entre exposés et non exposés, directement estimable car le schéma mesure l'incidence."
+  termes_en: [relative risk, incidence rate ratio, IRR, rate ratio]
+biais-du-temps-immortel:
+  libelle: Biais du temps immortel
+  description: "Biais des cohortes où une période pendant laquelle l'événement ne peut pas survenir est attribuée aux exposés, ce qui fait paraître l'exposition à tort protectrice."
+  termes_en: [immortal time bias, time-dependent exposure, landmark analysis]
+effet-travailleur-sain:
+  libelle: Effet travailleur sain
+  description: "Biais de sélection des cohortes professionnelles : les travailleurs sont en meilleure santé que la population générale, ce qui sous-estime les risques liés au travail."
+  termes_en: [healthy worker effect]
+censure-informative:
+  libelle: Censure informative
+  description: "Censure liée au pronostic (sorties d'étude des patients les plus graves), qui viole l'hypothèse de l'estimateur de Kaplan-Meier et biaise la survie estimée."
+  termes_en: [informative censoring, non-informative censoring]
+definition-et-source-des-cas:
+  libelle: Définition et source des cas
+  description: "Critères diagnostiques et lieu de recrutement des cas (de préférence incidents et diagnostiqués selon des critères explicites) dans une étude cas-témoins."
+  termes_en: [case definition, incident cases, case ascertainment]
+choix-et-source-des-temoins:
+  libelle: Choix et source des témoins
+  description: "Choix de témoins issus de la même population source que les cas et qui auraient été inclus comme cas s'ils avaient développé la maladie."
+  termes_en: [control selection, population-based controls, hospital controls]
+appariement-principe-et-facteurs:
+  libelle: "Appariement : principe et facteurs"
+  description: "Sélection de témoins semblables aux cas sur certains facteurs de confusion (âge, sexe), qui empêche ensuite d'étudier l'effet de ces facteurs et impose une analyse appariée."
+  termes_en: [matched, matching, matched controls, 1:4 matching]
+recueil-retrospectif-de-l-exposition:
+  libelle: Recueil rétrospectif de l'exposition
+  description: "Mesure de l'exposition passée après la survenue de la maladie (interrogatoire, dossiers), source de biais de mesure en cas-témoins."
+  termes_en: [retrospective assessment, questionnaire, recall, medical records]
+biais-de-memorisation:
+  libelle: Biais de mémorisation
+  description: "Biais de classement différentiel des cas-témoins : les cas se souviennent mieux ou autrement de leurs expositions que les témoins."
+  termes_en: [recall bias]
+impossibilite-d-estimer-incidence-et-prevalence:
+  libelle: Impossibilité d'estimer incidence et prévalence
+  description: "En cas-témoins, la proportion de cas est fixée par l'investigateur, ce qui interdit d'estimer incidence, prévalence et risque relatif."
+  termes_en: [case-control ratio, cannot estimate incidence]
+rapport-de-cotes-seule-mesure-estimable:
+  libelle: Rapport de cotes, seule mesure estimable
+  description: "En cas-témoins, seul le rapport de cotes d'exposition est estimable ; il approche le risque relatif lorsque la maladie est rare."
+  termes_en: [odds ratio, rare disease assumption]
+biais-de-selection-des-temoins-berkson:
+  libelle: Biais de sélection des témoins (Berkson)
+  description: "Biais des cas-témoins hospitaliers où les témoins, hospitalisés pour d'autres maladies, ne représentent pas l'exposition de la population source."
+  termes_en: [Berkson's bias, admission rate bias, hospital controls]
+analyse-appariee-regression-logistique-conditionnelle:
+  libelle: Analyse appariée, régression logistique conditionnelle
+  description: "Analyse qui respecte l'appariement (paires discordantes, régression logistique conditionnelle), sans laquelle l'estimation de l'association est biaisée."
+  termes_en: [conditional logistic regression, matched analysis, McNemar test, discordant pairs]
+cas-temoins-nichee:
+  libelle: Cas-témoins nichée
+  description: "Étude cas-témoins menée au sein d'une cohorte, avec des témoins tirés parmi les sujets encore à risque au moment de chaque cas."
+  termes_en: [nested case-control study, risk-set sampling, incidence density sampling]
+sensibilite-specificite:
+  libelle: Sensibilité, spécificité
+  description: "Proportion de malades ayant un test positif (sensibilité) et de non-malades ayant un test négatif (spécificité), caractéristiques intrinsèques du test."
+  termes_en: [sensitivity, specificity, true positive, false negative]
+vpp-vpn-et-prevalence:
+  libelle: VPP, VPN et prévalence
+  description: "Probabilité d'être malade si le test est positif (VPP) ou non malade s'il est négatif (VPN), qui varie avec la prévalence de la maladie dans la population testée."
+  termes_en: [positive predictive value, negative predictive value, PPV, NPV, pretest probability]
+test-de-reference:
+  libelle: Test de référence
+  description: "Examen considéré comme le meilleur moyen disponible d'établir le diagnostic, appliqué à tous les sujets et interprété indépendamment du test évalué."
+  termes_en: [reference standard, gold standard]
+rapports-de-vraisemblance:
+  libelle: Rapports de vraisemblance
+  description: "Rapports qui indiquent de combien un résultat positif ou négatif modifie la probabilité de maladie, indépendamment de la prévalence."
+  termes_en: [likelihood ratio, positive likelihood ratio, negative likelihood ratio, LR+, LR-]
+courbe-roc-auc-choix-du-seuil:
+  libelle: Courbe ROC, AUC, choix du seuil
+  description: "Courbe des couples sensibilité / 1 - spécificité selon le seuil d'un test quantitatif, dont l'aire sous la courbe résume la capacité discriminante et qui guide le choix du seuil."
+  termes_en: [ROC curve, area under the curve, AUC, C statistic, cutoff, Youden index]
+biais-de-spectre-de-verification-d-incorporation:
+  libelle: Biais de spectre, de vérification, d'incorporation
+  description: "Biais propres aux études diagnostiques : population non représentative (spectre), test de référence appliqué selon le résultat du test (vérification), test évalué inclus dans la référence (incorporation)."
+  termes_en: [spectrum bias, verification bias, partial verification, incorporation bias]
+reproductibilite-kappa-icc:
+  libelle: "Reproductibilité : kappa, ICC"
+  description: "Concordance entre observateurs ou entre mesures répétées, mesurée par le kappa (variables qualitatives) ou le coefficient de corrélation intraclasse (variables quantitatives)."
+  termes_en: [inter-rater agreement, reproducibility, kappa, intraclass correlation coefficient, reliability]
+revue-systematique-vs-narrative:
+  libelle: Revue systématique vs narrative
+  description: "Revue systématique fondée sur une question précise, une recherche exhaustive et une sélection reproductible des études, par opposition à la revue narrative non reproductible."
+  termes_en: [systematic review, narrative review, literature search, PRISMA]
+lecture-d-un-forest-plot:
+  libelle: Lecture d'un forest plot
+  description: "Lecture du graphique d'une méta-analyse : effet et intervalle de confiance de chaque étude, poids, ligne d'absence d'effet et estimation combinée (losange)."
+  termes_en: [forest plot, pooled estimate, diamond, weight]
+estimation-groupee:
+  libelle: Estimation groupée
+  description: "Effet global calculé en combinant les études pondérées selon leur précision, interprétable seulement si les études sont suffisamment homogènes."
+  termes_en: [pooled estimate, summary effect, meta-analysis, overall effect]
+heterogeneite-q-i2:
+  libelle: "Hétérogénéité : Q, I²"
+  description: "Variabilité des résultats entre études au-delà du hasard, testée par le Q de Cochran et quantifiée par l'I² (part de la variabilité due à l'hétérogénéité)."
+  termes_en: [heterogeneity, I2, Cochran's Q, between-study variance, tau2]
+effets-fixes-vs-aleatoires:
+  libelle: Effets fixes vs aléatoires
+  description: "Modèles de méta-analyse supposant un effet commun à toutes les études (fixe) ou une distribution d'effets (aléatoire), ce dernier donnant un intervalle de confiance plus large en cas d'hétérogénéité."
+  termes_en: [fixed-effect model, random-effects model, DerSimonian-Laird]
+funnel-plot-biais-de-publication:
+  libelle: Funnel plot, biais de publication
+  description: "Graphique de l'effet de chaque étude selon sa précision, dont l'asymétrie suggère un biais de publication (petites études négatives non publiées)."
+  termes_en: [funnel plot, publication bias, small-study effects, Egger's test]

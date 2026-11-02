@@ -34,6 +34,7 @@ function zoom(){const z=document.getElementById('zoom').value/100;svg.setAttribu
 document.getElementById('zoom').oninput=zoom;zoom();
 function closure(id,m,full){const s=new Set();const st=[...m[id]];while(st.length){const x=st.pop();if(s.has(x))continue;s.add(x);if(full)st.push(...m[x]);}return s;}
 let cur=null;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function clear(){Object.values(nodes).forEach(g=>g.classList.remove('dim','sel'));edges.forEach(e=>e.g.classList.remove('dim','hl-a','hl-d','hl-p'));}
 function li(ids){return [...ids].sort().map(i=>`<li data-id="${i}">${PD[i].num}. ${PD[i].t} <span style="color:var(--muted)">[${PD[i].c}]</span></li>`).join('')||'<li style="list-style:none;margin-left:-18px;color:var(--muted)">aucune</li>';}
 function select(id){if(!nodes[id])return;cur=id;clear();
@@ -43,7 +44,7 @@ Object.entries(nodes).forEach(([k,g])=>{if(k!==id&&!A.has(k)&&!De.has(k))g.class
 nodes[id].classList.add('sel');
 edges.forEach(e=>{const inA=A.has(e.a)&&(A.has(e.b)||e.b===id),inD=(e.a===id||De.has(e.a))&&De.has(e.b);
 if(inA)e.g.classList.add('hl-a');else if(inD)e.g.classList.add('hl-d');else e.g.classList.add('dim');});
-const d=PD[id];document.getElementById('info').innerHTML=`<h2>${d.num}. ${d.t}</h2><p style="margin:0 0 8px;color:var(--muted)">[${d.c}], phase ${d.p}, ${d.lvl}</p><strong>Prérequis directs</strong><ul>${li(pred[id])}</ul><strong>Dépendances directes</strong><ul>${li(succ[id])}</ul>`+(full?`<p style="color:var(--muted);margin:0">Chaîne complète : ${A.size} prérequis, ${De.size} dépendances.</p>`:'');
+const d=PD[id];document.getElementById('info').innerHTML=`<h2>${d.num}. ${d.t}</h2><p style="margin:0 0 8px;color:var(--muted)">[${d.c}], phase ${d.p}, ${d.lvl}</p><p style="margin:0 0 10px">${esc(d.d)}</p><strong>Prérequis directs</strong><ul>${li(pred[id])}</ul><strong>Dépendances directes</strong><ul>${li(succ[id])}</ul>`+(full?`<p style="color:var(--muted);margin:0">Chaîne complète : ${A.size} prérequis, ${De.size} dépendances.</p>`:'');
 document.querySelectorAll('#info li[data-id]').forEach(l=>l.onclick=()=>{select(l.dataset.id);center(l.dataset.id);});
 document.getElementById('num').value=parseInt(d.num,10);}
 function center(id){const f=document.getElementById('fig'),r=nodes[id].getBoundingClientRect(),fr=f.getBoundingClientRect();f.scrollBy({left:r.left-fr.left-fr.width/2+r.width/2,top:r.top-fr.top-fr.height/2+r.height/2,behavior:'smooth'});}
@@ -56,7 +57,7 @@ function selectPhase(k){const p=PH.find(x=>String(x.k)===String(k));if(!p)return
 const S=new Set(p.ids),Ext=new Set();p.ids.forEach(i=>pred[i].forEach(a=>{if(!S.has(a))Ext.add(a);}));
 Object.entries(nodes).forEach(([k2,g])=>{if(S.has(k2))g.classList.add('sel');else if(!Ext.has(k2))g.classList.add('dim');});
 edges.forEach(e=>{if(S.has(e.a)&&S.has(e.b))e.g.classList.add('hl-p');else if(Ext.has(e.a)&&S.has(e.b))e.g.classList.add('hl-a');else e.g.classList.add('dim');});
-document.getElementById('info').innerHTML=`<h2>${p.l}</h2><p style="margin:0 0 8px;color:var(--muted)">${p.an}, ${p.ids.length} notions</p><strong>Notions de la phase</strong><ul>${li(p.ids)}</ul><strong>Prérequis issus d’autres phases</strong><ul>${li(Ext)}</ul>`;
+document.getElementById('info').innerHTML=`<h2>${p.l}</h2><p style="margin:0 0 8px;color:var(--muted)">${p.niv}, ${p.ids.length} notions</p><strong>Notions de la phase</strong><ul>${li(p.ids)}</ul><strong>Prérequis issus d’autres phases</strong><ul>${li(Ext)}</ul>`;
 document.querySelectorAll('#info li[data-id]').forEach(l=>l.onclick=()=>{phSel.value='';select(l.dataset.id);center(l.dataset.id);});
 center(p.ids[0]);}
 phSel.onchange=e=>{if(e.target.value)selectPhase(e.target.value);else document.getElementById('reset').click();};

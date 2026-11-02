@@ -17,10 +17,10 @@ dot_reseau <- function(ref) {
     x <- info[[i]]
     c <- x$cat
     lab <- paste0(envelopper(paste0(n3(info, i), ". ", x$libelle)), sprintf("\\nPhase %s - [%s]", x$phase, x$code))
-    sty <- if (x$annee == 2) '"rounded,filled,dashed"' else '"rounded,filled"'
+    sty <- if (x$niveau == "avance") '"rounded,filled,dashed"' else '"rounded,filled"'
     g <- c(g, sprintf('n%s [label="%s" fillcolor="%s" color="%s" fontcolor="%s" style=%s penwidth=%s tooltip="%s"];',
                       n3(info, i), lab, FOND[[c]], COUL[[c]], TEXTE[[c]], sty,
-                      if (x$annee == 2) "1.6" else "0.8", x$libelle))
+                      if (x$niveau == "avance") "1.6" else "0.8", x$libelle))
   }
   for (i in ordre) {
     for (p in info[[i]]$prerequis) {

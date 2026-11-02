@@ -40,8 +40,8 @@ arbre_notions <- function(ref) {
     noeud(paste0(c$code, ". ", c$libelle), c$code, lapply(c$domaines, function(d) {
       dd <- domaine(ref, d)
       noeud(sprintf("Domaine %s. %s", d, dd$libelle), c$code, list(
-        noeud("Base (année 1)", c$code, feuilles(dd$base, c$code, "b"), cls = "lv"),
-        noeud("Avancé (année 2)", c$code, feuilles(dd$avance, c$code, "a"), cls = "lv")
+        noeud("Base", c$code, feuilles(dd$base, c$code, "b"), cls = "lv"),
+        noeud("Avancé", c$code, feuilles(dd$avance, c$code, "a"), cls = "lv")
       ), fold = 1L, cls = "dom")
     }), cls = "cat")
   }))
@@ -49,11 +49,11 @@ arbre_notions <- function(ref) {
 
 arbre_parcours <- function(ref) {
   info <- ref$info
-  noeud(sprintf("Parcours LCA - %d notions", length(info)), "R", lapply(1:2, function(a) {
-    phs <- Filter(function(ph) ph$annee == a, ref$parc)
-    noeud(sprintf("Année %d - %s", a, if (a == 1) "notions de base" else "notions avancées"), "R", lapply(phs, function(ph) {
+  noeud(sprintf("Parcours LCA - %d notions", length(info)), "R", lapply(c("base", "avance"), function(niv) {
+    phs <- Filter(function(ph) ph$niveau == niv, ref$parc)
+    noeud(LIBELLE_NIVEAU[[niv]], "R", lapply(phs, function(ph) {
       noeud(sprintf("Phase %s. %s", ph$numero, ph$titre), "R", lapply(ph$notions, function(n) {
-        noeud(ligne_parcours(info, n$id), info[[n$id]]$cat, cls = if (a == 1) "b" else "a")
+        noeud(ligne_parcours(info, n$id), info[[n$id]]$cat, cls = if (niv == "base") "b" else "a")
       }), cls = "dom")
     }), cls = "cat")
   }))
