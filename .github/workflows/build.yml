@@ -1,5 +1,4 @@
 # Génère les livrables à chaque modification de main et les fournit en artefact.
-# Inactif tant que le dépôt n'a pas de remote GitHub.
 name: build
 
 on:
@@ -13,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # igraph (via DiagrammeR) : glpk, libxml2 ; curl : libcurl ; rsvg : librsvg2
       - name: Dépendances système
-        run: sudo apt-get update && sudo apt-get install -y librsvg2-dev libxml2-dev
+        run: sudo apt-get update && sudo apt-get install -y libglpk-dev libxml2-dev libcurl4-openssl-dev librsvg2-dev
       - uses: r-lib/actions/setup-r@v2
         with:
           r-version: "4.5.1"
